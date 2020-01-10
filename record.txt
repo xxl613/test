@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html data-hairline="true" data-theme="light" lang="zh">
+ <head>
+  <meta charset="utf-8"/>
+  <title data-react-helmet="true">
+   发现 - 知乎
+  </title>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport"/>
+  <meta content="webkit" name="renderer"/>
+  <meta content="webkit" name="force-rendering"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="FTeR0c8arOPKh8c5DYh_9uu98_zJbaWw53J-Sch9MTg" name="google-site-verification"/>
+  <meta content="有问题，上知乎。知乎，可信赖的问答社区，以让每个人高效获得可信赖的解答为使命。知乎凭借认真、专业和友善的社区氛围，结构化、易获得的优质内容，基于问答的内容生产方式和独特的社区机制，吸引、聚集了各行各业中大量的亲历者、内行人、领域专家、领域爱好者，将高质量的内容透过人的节点来成规模地生产和分享。用户通过问答等交流方式建立信任和连接，打造和提升个人影响力，并发现、获得新机会。" name="description" property="og:description"/>
+  <link data-react-helmet="true" href="https://static.zhihu.com/heifetz/assets/apple-touch-icon-152.67c7b278.png" rel="apple-touch-icon"/>
+  <link data-react-helmet="true" href="https://static.zhihu.com/heifetz/assets/apple-touch-icon-152.67c7b278.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link data-react-helmet="true" href="https://static.zhihu.com/heifetz/assets/apple-touch-icon-120.b3e6278d.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link data-react-helmet="true" href="https://static.zhihu.com/heifetz/assets/apple-touch-icon-76.7a750095.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link data-react-helmet="true" href="https://static.zhihu.com/heifetz/assets/apple-touch-icon-60.a4a761d4.png" rel="apple-touch-icon" sizes="60x60"/>
+  <link href="https://static.zhihu.com/static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://static.zhihu.com/static/search.xml" rel="search" title="知乎" type="application/opensearchdescription+xml"/>
+  <link href="//static.zhimg.com" rel="dns-prefetch"/>
+  <link href="//pic1.zhimg.com" rel="dns-prefetch"/>
+  <link href="//pic2.zhimg.com" rel="dns-prefetch"/>
+  <link href="//pic3.zhimg.com" rel="dns-prefetch"/>
+  <link href="//pic4.zhimg.com" rel="dns-prefetch"/>
+  <style>
+   .u-safeAreaInset-top {
+  height: constant(safe-area-inset-top) !important;
+  height: env(safe-area-inset-top) !important;
+  
+}
+.u-safeAreaInset-bottom {
+  height: constant(safe-area-inset-bottom) !important;
+  height: env(safe-area-inset-bottom) !important;
+  
+}
+  </style>
+  <link href="https://static.zhihu.com/heifetz/app.d5f454db0952bc96e690.css" rel="stylesheet"/>
+  <link href="https://static.zhihu.com/heifetz/explore-routes.8426dd65be64371c4a7a.css" rel="stylesheet"/>
+  <script crossorigin="anonymous" data-sentry-config="{&quot;dsn&quot;:&quot;https://65e244586890460588f00f2987137aa8@crash2.zhihu.com/193&quot;,&quot;sampleRate&quot;:0.1,&quot;release&quot;:&quot;984-87e1d5f6&quot;,&quot;ignoreErrorNames&quot;:[&quot;NetworkError&quot;,&quot;SecurityError&quot;],&quot;ignoreErrors&quot;:[&quot;origin message&quot;,&quot;Network request failed&quot;,&quot;Loading chunk&quot;,&quot;这个系统不支持该功能。&quot;,&quot;Can't find variable: webkit&quot;,&quot;Can't find variable: $&quot;,&quot;内存不足&quot;,&quot;out of memory&quot;,&quot;DOM Exception 18&quot;,&quot;The operation is insecure&quot;,&quot;[object Event]&quot;,&quot;[object FileError]&quot;,&quot;[object DOMError]&quot;,&quot;[object Object]&quot;,&quot;拒绝访问。&quot;,&quot;Maximum call stack size exceeded&quot;,&quot;UploadError&quot;,&quot;无法 fetch&quot;,&quot;draft-js&quot;,&quot;缺少 JavaScript 对象&quot;,&quot;componentWillEnter&quot;,&quot;componentWillLeave&quot;,&quot;componentWillAppear&quot;,&quot;getInlineStyleAt&quot;,&quot;getCharacterList&quot;],&quot;whitelistUrls&quot;:[&quot;static.zhihu.com&quot;]}" defer="" src="https://unpkg.zhimg.com/@cfe/sentry-script@latest/dist/init.js">
+  </script>
+ </head>
+ <body>
+  <div id="root">
+   <div>
+    <div class="LoadingBar">
+    </div>
+    <div>
+     <header class="Sticky AppHeader" data-za-module="TopNavBar" role="banner">
+      <div class="AppHeader-inner">
+       <a aria-label="知乎" href="//www.zhihu.com">
+        <svg aria-hidden="true" class="Icon ZhihuLogo ZhihuLogo--blue Icon--logo" height="30" style="height:30px;width:64px" viewbox="0 0 200 91" width="64">
+         <title>
+         </title>
+         <g>
+          <path d="M53.29 80.035l7.32.002 2.41 8.24 13.128-8.24h15.477v-67.98H53.29v67.978zm7.79-60.598h22.756v53.22h-8.73l-8.718 5.473-1.587-5.46-3.72-.012v-53.22zM46.818 43.162h-16.35c.545-8.467.687-16.12.687-22.955h15.987s.615-7.05-2.68-6.97H16.807c1.09-4.1 2.46-8.332 4.1-12.708 0 0-7.523 0-10.085 6.74-1.06 2.78-4.128 13.48-9.592 24.41 1.84-.2 7.927-.37 11.512-6.94.66-1.84.785-2.08 1.605-4.54h9.02c0 3.28-.374 20.9-.526 22.95H6.51c-3.67 0-4.863 7.38-4.863 7.38H22.14C20.765 66.11 13.385 79.24 0 89.62c6.403 1.828 12.784-.29 15.937-3.094 0 0 7.182-6.53 11.12-21.64L43.92 85.18s2.473-8.402-.388-12.496c-2.37-2.788-8.768-10.33-11.496-13.064l-4.57 3.627c1.363-4.368 2.183-8.61 2.46-12.71H49.19s-.027-7.38-2.372-7.38zm128.752-.502c6.51-8.013 14.054-18.302 14.054-18.302s-5.827-4.625-8.556-1.27c-1.874 2.548-11.51 15.063-11.51 15.063l6.012 4.51zm-46.903-18.462c-2.814-2.577-8.096.667-8.096.667s12.35 17.2 12.85 17.953l6.08-4.29s-8.02-11.752-10.83-14.33zM199.99 46.5c-6.18 0-40.908.292-40.953.292v-31.56c1.503 0 3.882-.124 7.14-.376 12.773-.753 21.914-1.25 27.427-1.504 0 0 3.817-8.496-.185-10.45-.96-.37-7.24 1.43-7.24 1.43s-51.63 5.153-72.61 5.64c.5 2.756 2.38 5.336 4.93 6.11 4.16 1.087 7.09.53 15.36.277 7.76-.5 13.65-.76 17.66-.76v31.19h-41.71s.88 6.97 7.97 7.14h33.73v22.16c0 4.364-3.498 6.87-7.65 6.6-4.4.034-8.15-.36-13.027-.566.623 1.24 1.977 4.496 6.035 6.824 3.087 1.502 5.054 2.053 8.13 2.053 9.237 0 14.27-5.4 14.027-14.16V53.93h38.235c3.026 0 2.72-7.432 2.72-7.432z" fill-rule="evenodd">
+          </path>
+         </g>
+        </svg>
+       </a>
+       <ul class="Tabs AppHeader-Tabs" role="navigation">
+        <li class="Tabs-item AppHeader-Tab Tabs-item--noMeta" role="tab">
+         <a class="Tabs-link AppHeader-TabsLink" data-za-not-track-link="true" href="//www.zhihu.com/">
+          首页
+         </a>
+        </li>
+        <li class="Tabs-item AppHeader-Tab Tabs-item--noMeta" role="tab">
+         <a class="Tabs-link AppHeader-TabsLink is-active" data-za-not-track-link="true" href="//www.zhihu.com/explore">
+          发现
+         </a>
+        </li>
+        <li class="Tabs-item AppHeader-Tab Tabs-item--noMeta" role="tab">
+         <a class="Tabs-link AppHeader-TabsLink" data-za-not-track-link="true" href="//www.zhihu.com/question/waiting">
+          等你来答
+         </a>
+        </li>
+       </ul>
+       <div class="SearchBar" data-za-module="PresetWordItem" role="search">
+        <div class="SearchBar-toolWrapper">
+         <form class="SearchBar-tool">
+          <div>
+           <div class="Popover">
+            <label class="SearchBar-input Input-wrapper Input-wrapper--grey">
+             <input aria-activedescendant="null--1" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" aria-owns="null-content" autocomplete="off" class="Input" id="null-toggle" maxlength="100" placeholder="" role="combobox" type="text" value=""/>
+             <button aria-label="搜索" class="Button SearchBar-searchButton Button--primary" type="button">
+              <span style="display:inline-flex;align-items:center">
+               ​
+               <svg class="Zi Zi--Search SearchBar-searchIcon" fill="currentColor" height="18" viewbox="0 0 24 24" width="18">
+                <path d="M17.068 15.58a8.377 8.377 0 0 0 1.774-5.159 8.421 8.421 0 1 0-8.42 8.421 8.38 8.38 0 0 0 5.158-1.774l3.879 3.88c.957.573 2.131-.464 1.488-1.49l-3.879-3.878zm-6.647 1.157a6.323 6.323 0 0 1-6.316-6.316 6.323 6.323 0 0 1 6.316-6.316 6.323 6.323 0 0 1 6.316 6.316 6.323 6.323 0 0 1-6.316 6.316z" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </button>
+            </label>
+           </div>
+          </div>
+         </form>
+        </div>
+       </div>
+       <div class="AppHeader-userInfo">
+        <div class="AppHeader-profile">
+         <div>
+          <button class="Button AppHeader-login Button--blue" type="button">
+           登录
+          </button>
+          <button class="Button Button--primary Button--blue" type="button">
+           加入知乎
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div>
+      </div>
+     </header>
+    </div>
+    <main class="App-main" role="main">
+     <div>
+      <div class="Sticky">
+      </div>
+     </div>
+     <div class="ExploreHomePage">
+      <div class="ExploreHomePage-ContentSection ExploreHomePage-section" id="special">
+       <div class="ExploreHomePage-ContentSection-header">
+        <svg class="Zi Zi--LabelSpecial" fill="currentColor" height="36" viewbox="0 0 24 24" width="36">
+         <path d="M7.667 3.667h11.466a1.2 1.2 0 0 1 1.2 1.2v13.066a2.4 2.4 0 0 1-2.4 2.4H6.467V4.867a1.2 1.2 0 0 1 1.2-1.2zM4.2 9.619h1.689v10.714H5.4a2.4 2.4 0 0 1-2.4-2.4V10.82a1.2 1.2 0 0 1 1.2-1.2zm5.178-2.38a.6.6 0 0 0-.6.6v.585a.6.6 0 0 0 .6.6h8.044a.6.6 0 0 0 .6-.6v-.586a.6.6 0 0 0-.6-.6H9.378zm0 3.57a.6.6 0 0 0-.6.6v.586a.6.6 0 0 0 .6.6h8.044a.6.6 0 0 0 .6-.6v-.585a.6.6 0 0 0-.6-.6H9.378zm0 3.572a.6.6 0 0 0-.6.6v.586a.6.6 0 0 0 .6.6h4.578a.6.6 0 0 0 .6-.6v-.586a.6.6 0 0 0-.6-.6H9.378z" fill-rule="evenodd">
+         </path>
+        </svg>
+        <span>
+         最新专题
+        </span>
+       </div>
+       <div class="ExploreHomePage-ContentSection-body">
+        <div class="ExploreHomePage-specials">
+         <div class="ExploreSpecialCard ExploreHomePage-specialCard">
+          <a class="ExploreSpecialCard-banner" data-za-detail-view-id="5792" href="/special/19572342" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic1.zhimg.com/100/v2-18c2e85308cca3bd96b65730fff53064_hd.png"/>
+          </a>
+          <div class="ExploreSpecialCard-header">
+           <div class="ExploreSpecialCard-info">
+            <a class="ExploreSpecialCard-title" data-za-detail-view-id="5792" href="/special/19572342" rel="noreferrer noopener" target="_blank">
+             110宣传日
+            </a>
+            <div class="ExploreSpecialCard-count">
+             <span>
+              1 小时前
+              <!-- -->
+              更新
+             </span>
+             <span>
+              56,404,604
+              <!-- -->
+              浏览
+             </span>
+            </div>
+           </div>
+           <div class="ExploreSpecialCard-followButton">
+            <button class="ExploreFollowButton">
+             关注专题
+            </button>
+           </div>
+          </div>
+          <div class="ExploreSpecialCard-contentList">
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19572342#NewsSpecial-SubModule-1198263721762709504" rel="noopener noreferrer" target="blank">
+             Wai？110吗？
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="https://zhuanlan.zhihu.com/p/102092976" rel="noopener noreferrer" target="blank">
+             中国警察网正式入驻知乎！
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19572342#NewsSpecial-SubModule-1198260927152504832" rel="noopener noreferrer" target="blank">
+             警察知多少
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/308680568" rel="noopener noreferrer" target="blank">
+             有什么事是当警察之后才懂的？
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19572342#NewsSpecial-SubModule-1198263721762709504" rel="noopener noreferrer" target="blank">
+             Wai？110吗？
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/365584679" rel="noopener noreferrer" target="blank">
+             你有什么事会拨打110呢？
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="ExploreSpecialCard ExploreHomePage-specialCard">
+          <a class="ExploreSpecialCard-banner" data-za-detail-view-id="5792" href="/special/19830520" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic1.zhimg.com/100/v2-8325f66a898e4f8987902c10ef4a95d8_hd.png"/>
+          </a>
+          <div class="ExploreSpecialCard-header">
+           <div class="ExploreSpecialCard-info">
+            <a class="ExploreSpecialCard-title" data-za-detail-view-id="5792" href="/special/19830520" rel="noreferrer noopener" target="_blank">
+             伊朗将军被暗杀后的 144 小时
+            </a>
+            <div class="ExploreSpecialCard-count">
+             <span>
+              17 小时前
+              <!-- -->
+              更新
+             </span>
+             <span>
+              26,097,396
+              <!-- -->
+              浏览
+             </span>
+            </div>
+           </div>
+           <div class="ExploreSpecialCard-followButton">
+            <button class="ExploreFollowButton">
+             关注专题
+            </button>
+           </div>
+          </div>
+          <div class="ExploreSpecialCard-contentList">
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19830520#NewsSpecial-SubModule-1198222276150263808" rel="noopener noreferrer" target="blank">
+             影响 | 炸药桶四溅的火花
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/365399848" rel="noopener noreferrer" target="blank">
+             1 月 9 日特朗普宣布对伊朗实施新经济制裁，将对伊朗及国际经济局势产生哪些影响？
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19830520#NewsSpecial-SubModule-1198224740245200896" rel="noopener noreferrer" target="blank">
+             发声 | 战争迷雾下的众说纷纭
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/365389027" rel="noopener noreferrer" target="blank">
+             1 月 9 日特朗普就伊朗空袭美军基地的讲话有哪些信息点？
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19830520#NewsSpecial-SubModule-1198271220221902848" rel="noopener noreferrer" target="blank">
+             观点 | 战火会飘向何处
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/answer/966886937" rel="noopener noreferrer" target="blank">
+             中国阿拉伯国家研究院院长李绍先：伊朗是在「开炮」为美军送行
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="ExploreSpecialCard ExploreHomePage-specialCard">
+          <a class="ExploreSpecialCard-banner" data-za-detail-view-id="5792" href="/special/19555698" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic2.zhimg.com/100/v2-4d4c145bab87b7042df2e507576fa12d_hd.png"/>
+          </a>
+          <div class="ExploreSpecialCard-header">
+           <div class="ExploreSpecialCard-info">
+            <a class="ExploreSpecialCard-title" data-za-detail-view-id="5792" href="/special/19555698" rel="noreferrer noopener" target="_blank">
+             新年新气象，从换「头」像开始
+            </a>
+            <div class="ExploreSpecialCard-count">
+             <span>
+              1 天前
+              <!-- -->
+              更新
+             </span>
+             <span>
+              22,233,700
+              <!-- -->
+              浏览
+             </span>
+            </div>
+           </div>
+           <div class="ExploreSpecialCard-followButton">
+            <button class="ExploreFollowButton">
+             关注专题
+            </button>
+           </div>
+          </div>
+          <div class="ExploreSpecialCard-contentList">
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19555698#NewsSpecial-SubModule-1198197924314968064" rel="noopener noreferrer" target="blank">
+             2020 年强推头像
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/answer/958657380" rel="noopener noreferrer" target="blank">
+             今年本命年，准备换个红色用几天
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19555698#NewsSpecial-SubModule-1198200372441956352" rel="noopener noreferrer" target="blank">
+             经典沙雕头像集合
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/answer/909165301" rel="noopener noreferrer" target="blank">
+             低调中透露着一点沙雕，沙雕中带着一丝欢笑！
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/19555698#NewsSpecial-SubModule-1198212055386181632" rel="noopener noreferrer" target="blank">
+             可爱又不明显的情头
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/answer/854506585" rel="noopener noreferrer" target="blank">
+             ғᴀʟʟ ɪɴ ғᴀʟʟ, ғᴀʟʟ ɪɴ ʟᴏᴠᴇ  - 上
+            </a>
+           </div>
+          </div>
+         </div>
+         <div class="ExploreSpecialCard ExploreHomePage-specialCard">
+          <a class="ExploreSpecialCard-banner" data-za-detail-view-id="5792" href="/special/21218111" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic1.zhimg.com/100/v2-6fd6997f88de19c623e1c9e9794727c8_hd.png"/>
+          </a>
+          <div class="ExploreSpecialCard-header">
+           <div class="ExploreSpecialCard-info">
+            <a class="ExploreSpecialCard-title" data-za-detail-view-id="5792" href="/special/21218111" rel="noreferrer noopener" target="_blank">
+             醒醒，今天期末考试了
+            </a>
+            <div class="ExploreSpecialCard-count">
+             <span>
+              2 天前
+              <!-- -->
+              更新
+             </span>
+             <span>
+              12,849,961
+              <!-- -->
+              浏览
+             </span>
+            </div>
+           </div>
+           <div class="ExploreSpecialCard-followButton">
+            <button class="ExploreFollowButton">
+             关注专题
+            </button>
+           </div>
+          </div>
+          <div class="ExploreSpecialCard-contentList">
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/21218111#NewsSpecial-SubModule-1197903182368833536" rel="noopener noreferrer" target="blank">
+             期末考复习指南
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/19679599" rel="noopener noreferrer" target="blank">
+             大学期末考试如何复习？
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/21218111#NewsSpecial-SubModule-1197903087648690176" rel="noopener noreferrer" target="blank">
+             考场内外
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/364063787" rel="noopener noreferrer" target="blank">
+             最后出考场的考生，会被所有监考老师围观吗？
+            </a>
+           </div>
+           <div class="ExploreSpecialCard-contentItem">
+            <a class="ExploreSpecialCard-contentTag" data-za-detail-view-id="5793" href="/special/21218111#NewsSpecial-SubModule-1197903140329181184" rel="noopener noreferrer" target="blank">
+             大学期末考二三问
+            </a>
+            <a class="ExploreSpecialCard-contentTitle" data-za-detail-view-id="5794" href="/question/328937211" rel="noopener noreferrer" target="blank">
+             为什么大学期末考试不开卷？
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="ExploreHomePage-ContentSection-moreButton">
+        <a data-za-detail-view-id="5796" href="/special/all" rel="noreferrer noopener" target="_blank">
+         查看更多专题
+         <svg class="Zi Zi--ArrowRight" fill="currentColor" height="25" viewbox="0 0 24 24" width="25">
+          <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+          </path>
+         </svg>
+        </a>
+       </div>
+      </div>
+      <div class="ExploreHomePage-ContentSection ExploreHomePage-section" id="roundtable">
+       <div class="ExploreHomePage-ContentSection-header">
+        <svg class="Zi Zi--LabelRoundtable" fill="currentColor" height="36" viewbox="0 0 24 24" width="36">
+         <path d="M12 21.333a9.333 9.333 0 1 1 0-18.666 9.333 9.333 0 0 1 0 18.666zm-.66-11.287c.332.385.609.77.775 1.21.055-.054.665-.99.72-1.706.055-.385.126-1.616-.443-2.367-.443-.496-1.219-.77-1.884-.55a1.788 1.788 0 0 0-1.33 2.036c.887.276 1.607.771 2.161 1.377zm-1.33 1.541c.443-.055.941-.11 1.44 0 0-.055-.484-.936-1.108-1.486-.665-.496-1.33-.973-2.216-.771-.72.11-1.723.77-1.55 2.092.11.606.553 1.101 1.162 1.321.61-.605 1.44-1.046 2.272-1.156zm2.714.165c.056 0 1.164.055 1.828-.165.72-.275 1.412-.68 1.773-1.541.11-.276.23-1.248-.443-1.872-.72-.716-1.717-.716-2.438-.165.222.825.063 1.966-.11 2.532-.103.348-.333.88-.61 1.211zm-1.44.55c-.056 0-1.33.056-1.828.221-.72.275-1.447.668-1.773 1.541-.11.276-.21 1.26.443 1.872.665.661 1.718.661 2.438.11-.295-.811-.166-1.761.055-2.477.166-.495.388-.936.665-1.266zm5.041-.99c-.665.605-1.44.99-2.327 1.211-.443.055-.941.11-1.44 0 0 .055.554.991 1.108 1.431.665.496 1.385.771 2.216.771.72-.11 1.678-.692 1.551-2.092-.055-.605-.554-1.101-1.108-1.321zm-3.656 2.642a3.475 3.475 0 0 1-.776-1.156c-.055.055-.665.991-.72 1.707-.055.385-.101 1.506.499 2.312.443.496 1.218.77 1.883.55.887-.275 1.496-1.1 1.33-2.036a5.38 5.38 0 0 1-2.216-1.377z" fill-rule="evenodd">
+         </path>
+        </svg>
+        <span>
+         圆桌讨论
+        </span>
+       </div>
+       <div class="ExploreHomePage-ContentSection-body">
+        <div class="ExploreHomePage-roundtables">
+         <div class="ExploreRoundtableCard ExploreHomePage-roundtableCard">
+          <div class="ExploreRoundtableCard-headerContainer" style="background-color:#1e1924">
+           <div class="ExploreRoundtableCard-headerBackgrounds">
+            <div style="background-image:url(https://pic3.zhimg.com/50/v2-e0bb63eaca2fa557092258f1321184b6_hd.jpg);background-position:center">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(30, 25, 36, 1) 0%, rgba(30, 25, 36, 0) 100%">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(30, 25, 36, 0.5) 0%, rgba(30, 25, 36, 0) 100%">
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-header">
+            <a class="ExploreRoundtableCard-title" data-za-detail-view-id="5799" href="/roundtable/qingyunianyeqingmei" rel="noreferrer noopener" target="_blank">
+             《庆余年》叶轻眉的故事
+            </a>
+            <a class="ExploreRoundtableCard-intro" data-za-detail-view-id="5799" href="/roundtable/qingyunianyeqingmei" rel="noreferrer noopener" target="_blank">
+             《庆余年》是一本优秀的小说，也被改编成优秀的电视剧。关于庆余年的讨论很多，最有神秘感的无疑是范闲的妈妈，那个穿越而来的叶轻眉。如果以叶轻眉为主题写一个前传，应该注意那些点，都有哪些脑洞打开的想法？
+            </a>
+            <div class="ExploreRoundtableCard-info">
+             <div class="ExploreRoundtableCard-guests">
+              <img src="https://pic3.zhimg.com/50/v2-9487a4e5cb71506d8f740d7b54393d39_hd.jpg"/>
+              <img src="https://pic4.zhimg.com/50/v2-baf321f7a9908cfe3d0a209cebb006fc_hd.jpg"/>
+              <img src="https://pic1.zhimg.com/50/v2-66dc8be833e3ecc441b73e18b3ab9e97_hd.jpg"/>
+              <span>
+               5
+               <!-- -->
+               位嘉宾参与
+              </span>
+             </div>
+             <div class="ExploreRoundtableCard-count">
+              <span>
+               304
+               <!-- -->
+               人关注
+              </span>
+             </div>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-followButton">
+            <button class="ExploreFollowButton ExploreFollowButton--colored" style="color:rgba(30, 25, 36, 1)">
+             关注圆桌
+            </button>
+           </div>
+          </div>
+          <div class="ExploreRoundtableCard-questionList">
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/365336400" rel="noopener noreferrer" target="_blank">
+             有哪些诗词，是你穿越后一定用的上的？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              16
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/358037227" rel="noopener noreferrer" target="_blank">
+             《庆余年》讲的是什么故事？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              695
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/360528621" rel="noopener noreferrer" target="_blank">
+             电视剧《庆余年》中有什么细思极恐的情节?
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              366
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="ExploreRoundtableCard ExploreHomePage-roundtableCard">
+          <div class="ExploreRoundtableCard-headerContainer" style="background-color:#7d98b3">
+           <div class="ExploreRoundtableCard-headerBackgrounds">
+            <div style="background-image:url(https://pic4.zhimg.com/50/v2-945447ebfa1c17711571c6226494dee7_hd.jpg);background-position:center">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(125, 152, 179, 1) 0%, rgba(125, 152, 179, 0) 100%">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(125, 152, 179, 0.5) 0%, rgba(125, 152, 179, 0) 100%">
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-header">
+            <a class="ExploreRoundtableCard-title" data-za-detail-view-id="5799" href="/roundtable/202001anime" rel="noreferrer noopener" target="_blank">
+             冬季动画大作战
+            </a>
+            <a class="ExploreRoundtableCard-intro" data-za-detail-view-id="5799" href="/roundtable/202001anime" rel="noreferrer noopener" target="_blank">
+             冬季新番均已开播，这个时候我们是不是该倒上一杯「肥宅快乐水」？本次知乎动画举办冬季新番动画鉴赏圆桌，接下来我们开始追番修仙之旅。那么谁才是一月新番霸权？
+            </a>
+            <div class="ExploreRoundtableCard-info">
+             <div class="ExploreRoundtableCard-guests">
+              <img src="https://pic1.zhimg.com/50/v2-dff9a8ec5e15ced5c31fd633e40eea4e_hd.jpg"/>
+              <img src="https://pic1.zhimg.com/50/v2-98ee7afe263b063b424cb0f124cbac68_hd.jpg"/>
+              <img src="https://pic2.zhimg.com/50/v2-0d3a326cae66b62fb96caf3f8d7f076e_hd.jpg"/>
+              <span>
+               9
+               <!-- -->
+               位嘉宾参与
+              </span>
+             </div>
+             <div class="ExploreRoundtableCard-count">
+              <span>
+               146
+               <!-- -->
+               人关注
+              </span>
+             </div>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-followButton">
+            <button class="ExploreFollowButton ExploreFollowButton--colored" style="color:rgba(125, 152, 179, 1)">
+             关注圆桌
+            </button>
+           </div>
+          </div>
+          <div class="ExploreRoundtableCard-questionList">
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/365398343" rel="noopener noreferrer" target="_blank">
+             如何评价2020年1月新番《猎龙飞船》？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              12
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/363145487" rel="noopener noreferrer" target="_blank">
+             如何评价 2020 年 1 月新番《别对映像研出手！》？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              62
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/364908924" rel="noopener noreferrer" target="_blank">
+             如何评价2020年1月新番《异度侵入 ID:INVADED》？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              21
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="ExploreRoundtableCard ExploreHomePage-roundtableCard">
+          <div class="ExploreRoundtableCard-headerContainer" style="background-color:#b3342b">
+           <div class="ExploreRoundtableCard-headerBackgrounds">
+            <div style="background-image:url(https://pic4.zhimg.com/50/v2-a0e1e1c3ba46055fb3dd01fc5f3be22c_hd.jpg);background-position:center">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(179, 52, 43, 1) 0%, rgba(179, 52, 43, 0) 100%">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(179, 52, 43, 0.5) 0%, rgba(179, 52, 43, 0) 100%">
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-header">
+            <a class="ExploreRoundtableCard-title" data-za-detail-view-id="5799" href="/roundtable/bannianhuo" rel="noreferrer noopener" target="_blank">
+             办年货，过新年
+            </a>
+            <a class="ExploreRoundtableCard-intro" data-za-detail-view-id="5799" href="/roundtable/bannianhuo" rel="noreferrer noopener" target="_blank">
+             「过年回家带什么？走亲访友送什么？新年焕新穿什么？合家团圆吃什么？」你是否还在为这些问题发愁？不如来参加这次的「年货选购冲刺班」，看看知友们的选购秘籍！好物有很多，时间却不等人，春节越来越近，年货筹备正在火热进行中，快抓紧时间来围观「办年货，过新年」圆桌吧！
+            </a>
+            <div class="ExploreRoundtableCard-info">
+             <div class="ExploreRoundtableCard-guests">
+              <img src="https://pic3.zhimg.com/50/v2-af0c93ebaa0ca0400c0c9b92fc59e5ea_hd.jpg"/>
+              <img src="https://pic4.zhimg.com/50/v2-f8d47257194e05ad3a540722939c7034_hd.jpg"/>
+              <img src="https://pic1.zhimg.com/50/v2-f5477f91c9ce2074a63c0e7f5ba4a478_hd.jpg"/>
+              <span>
+               11
+               <!-- -->
+               位嘉宾参与
+              </span>
+             </div>
+             <div class="ExploreRoundtableCard-count">
+              <span>
+               781
+               <!-- -->
+               人关注
+              </span>
+             </div>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-followButton">
+            <button class="ExploreFollowButton ExploreFollowButton--colored" style="color:rgba(179, 52, 43, 1)">
+             关注圆桌
+            </button>
+           </div>
+          </div>
+          <div class="ExploreRoundtableCard-questionList">
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/264876497" rel="noopener noreferrer" target="_blank">
+             有哪些不俗的送男朋友的新年礼物？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              36
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/289335655" rel="noopener noreferrer" target="_blank">
+             烘干机真的有必要买吗？该如何选购？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              166
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/364278774" rel="noopener noreferrer" target="_blank">
+             有什么好物能让每年一次的年底大扫除更加高效彻底？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              60
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="ExploreRoundtableCard ExploreHomePage-roundtableCard">
+          <div class="ExploreRoundtableCard-headerContainer" style="background-color:#5b95b3">
+           <div class="ExploreRoundtableCard-headerBackgrounds">
+            <div style="background-image:url(https://pic1.zhimg.com/50/v2-3645e7ed5f39f47295bd57950e4ecf32_hd.jpg);background-position:center">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(91, 149, 179, 1) 0%, rgba(91, 149, 179, 0) 100%">
+            </div>
+            <div style="background:linear-gradient(to right, rgba(91, 149, 179, 0.5) 0%, rgba(91, 149, 179, 0) 100%">
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-header">
+            <a class="ExploreRoundtableCard-title" data-za-detail-view-id="5799" href="/roundtable/tokusatsu" rel="noreferrer noopener" target="_blank">
+             童年最爱的特摄片
+            </a>
+            <a class="ExploreRoundtableCard-intro" data-za-detail-view-id="5799" href="/roundtable/tokusatsu" rel="noreferrer noopener" target="_blank">
+             你是否还记得童年看过的《奥特曼》、《假面骑士》和《恐龙战队》？本期圆桌知乎动画将联合机核网围绕日本特摄展开有趣的讨论，与各位一起探寻「童年最爱的特摄片」。
+            </a>
+            <div class="ExploreRoundtableCard-info">
+             <div class="ExploreRoundtableCard-guests">
+              <img src="https://pic3.zhimg.com/50/v2-0d0f9c09d89eefab9472a5773abb54cc_hd.jpg"/>
+              <img src="https://pic3.zhimg.com/50/v2-8162a79dce764f25bb98f0cd9ea61290_hd.jpg"/>
+              <img src="https://pic4.zhimg.com/50/v2-31ceaecb844e9ec1d866467856073590_hd.jpg"/>
+              <span>
+               11
+               <!-- -->
+               位嘉宾参与
+              </span>
+             </div>
+             <div class="ExploreRoundtableCard-count">
+              <span>
+               147
+               <!-- -->
+               人关注
+              </span>
+             </div>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-followButton">
+            <button class="ExploreFollowButton ExploreFollowButton--colored" style="color:rgba(91, 149, 179, 1)">
+             关注圆桌
+            </button>
+           </div>
+          </div>
+          <div class="ExploreRoundtableCard-questionList">
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/364971242" rel="noopener noreferrer" target="_blank">
+             给你印象最恐怖的奥特曼是哪一集？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              17
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/55455515" rel="noopener noreferrer" target="_blank">
+             如何理解特摄作品的「世界观」，该词与「世界」一词有何不同？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              9
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+           <div class="ExploreRoundtableCard-questionItem">
+            <a class="ExploreRoundtableCard-questionTitle" data-za-detail-view-id="5800" href="/question/47981858" rel="noopener noreferrer" target="_blank">
+             有哪些冷门的特摄片？
+            </a>
+            <div class="ExploreRoundtableCard-questionCounts">
+             <span>
+              23
+              <!-- -->
+              个回答
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="ExploreHomePage-ContentSection-moreButton">
+        <a data-za-detail-view-id="5802" href="/roundtable" rel="noreferrer noopener" target="_blank">
+         查看更多圆桌
+         <svg class="Zi Zi--ArrowRight" fill="currentColor" height="25" viewbox="0 0 24 24" width="25">
+          <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+          </path>
+         </svg>
+        </a>
+       </div>
+      </div>
+      <div class="ExploreHomePage-ContentSection ExploreHomePage-section" id="collection">
+       <div class="ExploreHomePage-ContentSection-header">
+        <svg class="Zi Zi--Star" fill="currentColor" height="36" viewbox="0 0 24 24" width="36">
+         <path d="M5.515 19.64l.918-5.355-3.89-3.792c-.926-.902-.639-1.784.64-1.97L8.56 7.74l2.404-4.871c.572-1.16 1.5-1.16 2.072 0L15.44 7.74l5.377.782c1.28.186 1.566 1.068.64 1.97l-3.89 3.793.918 5.354c.219 1.274-.532 1.82-1.676 1.218L12 18.33l-4.808 2.528c-1.145.602-1.896.056-1.677-1.218z" fill-rule="evenodd">
+         </path>
+        </svg>
+        <span>
+         热门收藏夹
+        </span>
+       </div>
+       <div class="ExploreHomePage-ContentSection-body">
+        <div class="ExploreHomePage-collections">
+         <div class="ExploreCollectionCard ExploreHomePage-collectionCard">
+          <div class="ExploreCollectionCard-header">
+           <div class="ExploreCollectionCard-info">
+            <a class="ExploreCollectionCard-title" data-za-detail-view-id="5804" data-za-detail-view-name="标题点击" href="/collection/36897826" rel="noopener noreferrer" target="_blank">
+             好吧，建筑。
+            </a>
+            <div class="ExploreCollectionCard-relatedMembers">
+             <div class="ExploreCollectionCard-creator">
+              <span class="UserLink ExploreCollectionCard-creatorAvatar">
+               <div class="Popover">
+                <div aria-expanded="false" aria-haspopup="true" aria-owns="null-content" id="null-toggle">
+                 <a class="UserLink-link" data-za-detail-view-element_name="User" data-za-detail-view-id="5806" href="//www.zhihu.com/people/billou" target="_blank">
+                  <img alt="Billou" class="Avatar UserLink-avatar" height="28" src="https://pic2.zhimg.com/v2-276888b11fc6dfd19c8a35e0e04bbf6c_is.jpg" srcset="https://pic2.zhimg.com/v2-276888b11fc6dfd19c8a35e0e04bbf6c_im.jpg 2x" width="28"/>
+                 </a>
+                </div>
+               </div>
+              </span>
+              <a class="ExploreCollectionCard-creatorName" data-za-detail-view-id="5806" href="/people/billou" rel="noopener noreferrer" target="_blank">
+               Billou
+              </a>
+              <span class="ExploreCollectionCard-creatorSuffix">
+               创建
+              </span>
+             </div>
+             <div class="ExploreCollectionCard-followers">
+              8,999
+              <!-- -->
+              人关注
+             </div>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-followButton">
+            <button class="ExploreFollowButton">
+             关注收藏夹
+            </button>
+           </div>
+          </div>
+          <div class="ExploreCollectionCard-contentList">
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://www.zhihu.com/answer/933038547" rel="noopener noreferrer" target="_blank">
+             为什么少有设计院能够实现真正的BIM设计，还是死守着CAD这样的二维生产工具？
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             凭栏闻秋：先拿这个玩意镇个楼，表示我是真干过BIM并应用于实践的。我2012年参加工作，2016年上半年开始接触BIM，虽然一直都是在施工单位工作，但是都是BIM的使用者，所以还是有些许资格来回答这个问题，那就假装被题主邀请过了吧[大笑]其次，我已经于2017年脱离BIM行…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              回答
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              92 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              34 评论
+             </span>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://zhuanlan.zhihu.com/p/96041804" rel="noopener noreferrer" target="_blank">
+             建筑师的灵魂三问//建筑学的未来
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             袁牧：在二十多年的建筑设计生涯里，我见过太多行业的阴暗面。同行的恶性低价竞争、政府部门的专横独断、甲方的贪婪欺诈、城市建筑的庸俗沉沦、从业者的绝望挣扎……以及行业自身的技术落后、价值混乱、自欺欺人、浮躁浮夸、不思进取……一地鸡毛。很多很多次，我…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              文章
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              139 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              5 评论
+             </span>
+            </div>
+           </div>
+          </div>
+          <a class="ExploreCollectionCard-collectedContentCount" data-za-detail-view-id="5804" data-za-detail-view-name="已收藏点击" href="/collection/36897826" rel="noopener noreferrer" target="_blank">
+           已收藏
+           <!-- -->
+           939
+           <!-- -->
+           条内容
+           <svg class="Zi Zi--ArrowRight" fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+            </path>
+           </svg>
+          </a>
+         </div>
+         <div class="ExploreCollectionCard ExploreHomePage-collectionCard">
+          <div class="ExploreCollectionCard-header">
+           <div class="ExploreCollectionCard-info">
+            <a class="ExploreCollectionCard-title" data-za-detail-view-id="5804" data-za-detail-view-name="标题点击" href="/collection/58222796" rel="noopener noreferrer" target="_blank">
+             这才是我要的理智答案
+            </a>
+            <div class="ExploreCollectionCard-relatedMembers">
+             <div class="ExploreCollectionCard-creator">
+              <span class="UserLink ExploreCollectionCard-creatorAvatar">
+               <div class="Popover">
+                <div aria-expanded="false" aria-haspopup="true" aria-owns="null-content" id="null-toggle">
+                 <a class="UserLink-link" data-za-detail-view-element_name="User" data-za-detail-view-id="5806" href="//www.zhihu.com/people/wang-jun-yi-73-97" target="_blank">
+                  <img alt="王俊俊" class="Avatar UserLink-avatar" height="28" src="https://pic3.zhimg.com/v2-82e56c8f0e94973bb72b4d7c637a0a36_is.jpg" srcset="https://pic3.zhimg.com/v2-82e56c8f0e94973bb72b4d7c637a0a36_im.jpg 2x" width="28"/>
+                 </a>
+                </div>
+               </div>
+              </span>
+              <a class="ExploreCollectionCard-creatorName" data-za-detail-view-id="5806" href="/people/wang-jun-yi-73-97" rel="noopener noreferrer" target="_blank">
+               王俊俊
+              </a>
+              <span class="ExploreCollectionCard-creatorSuffix">
+               创建
+              </span>
+             </div>
+             <div class="ExploreCollectionCard-followers">
+              13,970
+              <!-- -->
+              人关注
+             </div>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-followButton">
+            <button class="ExploreFollowButton">
+             关注收藏夹
+            </button>
+           </div>
+          </div>
+          <div class="ExploreCollectionCard-contentList">
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://www.zhihu.com/answer/955256584" rel="noopener noreferrer" target="_blank">
+             中国八、九十年代的治安有多差，逼得中央要严打？
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             王俊俊：作为所谓的十大匪城，我家楼下500米远的河堤，曾经是抢劫杀人犯的猎场。抢劫犯杀了那么多人，乃至于其中一个还是我妈的夫妻朋友，逃生的阿姨亲口讲抢劫杀人经过，怎么散步怎么遇到抢劫犯怎么被杀，她怎么逃到我家楼下。年幼的我在家还帮她插卡拉OK想让她开…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              回答
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              993 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              95 评论
+             </span>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://www.zhihu.com/answer/962086286" rel="noopener noreferrer" target="_blank">
+             《奇葩说》有带来什么不好的影响吗？
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             王俊俊：讨论找个问题很有趣。首先《奇葩说》的本质是什么？是披着辩论外衣的高级娱乐。和其他娱乐的本质是一样的，只是
+             <b>
+              营养配比
+             </b>
+             不一样。要吸引人，自然要一些噱头。连咪蒙这种公认毒药，都有一个文学硕士的噱头和一篇独唱团的文章被反反复复的提及。可见噱头有多大…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              回答
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              975 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              119 评论
+             </span>
+            </div>
+           </div>
+          </div>
+          <a class="ExploreCollectionCard-collectedContentCount" data-za-detail-view-id="5804" data-za-detail-view-name="已收藏点击" href="/collection/58222796" rel="noopener noreferrer" target="_blank">
+           已收藏
+           <!-- -->
+           692
+           <!-- -->
+           条内容
+           <svg class="Zi Zi--ArrowRight" fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+            </path>
+           </svg>
+          </a>
+         </div>
+         <div class="ExploreCollectionCard ExploreHomePage-collectionCard">
+          <div class="ExploreCollectionCard-header">
+           <div class="ExploreCollectionCard-info">
+            <a class="ExploreCollectionCard-title" data-za-detail-view-id="5804" data-za-detail-view-name="标题点击" href="/collection/120052086" rel="noopener noreferrer" target="_blank">
+             002-原来如此
+            </a>
+            <div class="ExploreCollectionCard-relatedMembers">
+             <div class="ExploreCollectionCard-creator">
+              <span class="UserLink ExploreCollectionCard-creatorAvatar">
+               <div class="Popover">
+                <div aria-expanded="false" aria-haspopup="true" aria-owns="null-content" id="null-toggle">
+                 <a class="UserLink-link" data-za-detail-view-element_name="User" data-za-detail-view-id="5806" href="//www.zhihu.com/people/jing-zhe-511" target="_blank">
+                  <img alt="荆哲" class="Avatar UserLink-avatar" height="28" src="https://pic1.zhimg.com/68b861ce481c35304af23afccae28a7c_is.jpg" srcset="https://pic1.zhimg.com/68b861ce481c35304af23afccae28a7c_im.jpg 2x" width="28"/>
+                 </a>
+                </div>
+               </div>
+              </span>
+              <a class="ExploreCollectionCard-creatorName" data-za-detail-view-id="5806" href="/people/jing-zhe-511" rel="noopener noreferrer" target="_blank">
+               荆哲
+              </a>
+              <span style="display:inline-flex;align-items:center">
+               ​
+               <svg class="Zi Zi--BadgeCert ExploreCollectionCard-creatorBadge" fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+                <g fill="none" fill-rule="evenodd">
+                 <path d="M2.64 13.39c1.068.895 1.808 2.733 1.66 4.113l.022-.196c-.147 1.384.856 2.4 2.24 2.278l-.198.016c1.387-.122 3.21.655 4.083 1.734l-.125-.154c.876 1.084 2.304 1.092 3.195.027l-.127.152c.895-1.068 2.733-1.808 4.113-1.66l-.198-.022c1.386.147 2.402-.856 2.279-2.238l.017.197c-.122-1.388.655-3.212 1.734-4.084l-.154.125c1.083-.876 1.092-2.304.027-3.195l.152.127c-1.068-.895-1.808-2.732-1.66-4.113l-.022.198c.147-1.386-.856-2.4-2.24-2.279l.198-.017c-1.387.123-3.21-.654-4.083-1.733l.125.153c-.876-1.083-2.304-1.092-3.195-.027l.127-.152c-.895 1.068-2.733 1.808-4.113 1.662l.198.02c-1.386-.147-2.4.857-2.279 2.24L4.4 6.363c.122 1.387-.655 3.21-1.734 4.084l.154-.126c-1.083.878-1.092 2.304-.027 3.195l-.152-.127z" fill="#0F88EB">
+                 </path>
+                 <path d="M9.78 15.728l-2.633-2.999s-.458-.705.242-1.362c.7-.657 1.328-.219 1.328-.219l1.953 2.132 4.696-4.931s.663-.348 1.299.198c.636.545.27 1.382.27 1.382s-3.466 3.858-5.376 5.782c-.98.93-1.778.017-1.778.017z" fill="#FFF">
+                 </path>
+                </g>
+               </svg>
+              </span>
+              <span class="ExploreCollectionCard-creatorSuffix">
+               创建
+              </span>
+             </div>
+             <div class="ExploreCollectionCard-followers">
+              157
+              <!-- -->
+              人关注
+             </div>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-followButton">
+            <button class="ExploreFollowButton">
+             关注收藏夹
+            </button>
+           </div>
+          </div>
+          <div class="ExploreCollectionCard-contentList">
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://zhuanlan.zhihu.com/p/101161185" rel="noopener noreferrer" target="_blank">
+             没有显微镜还想观察细胞？这些超乎想象的“巨无霸”单细胞生物绝对能满足你
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             SME情报员： 细胞总是和显微镜联系在一起，即使是大象，它的体细胞与老鼠的体细胞在大小上并没有明显的差异。可是我们看到单细胞生物不需要复杂的组织器官也能够很好地生存，那么是否存在“单细胞大象”呢？
+             <b>
+              生物课本曾告诉我们，细胞通过细胞膜与外界进行物质交换，其…
+             </b>
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              文章
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              669 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              39 评论
+             </span>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://www.zhihu.com/answer/968917728" rel="noopener noreferrer" target="_blank">
+             为什么甲状腺结节患锅的这么多啊？
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             甲状腺医生爱德华：不请自来，前甲状腺外科医生。甲状腺结节患病率的上升，取决于两个因素：1.统计学假象，2.实际患病人数增多。先说说假象，在十年前，彩超技术不发达，直径1公分以下的甲状腺结节，在彩超上都较难看清，直径5毫米以下的更是根本就看不见。而现在彩超技术大大…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              回答
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              1 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              0 评论
+             </span>
+            </div>
+           </div>
+          </div>
+          <a class="ExploreCollectionCard-collectedContentCount" data-za-detail-view-id="5804" data-za-detail-view-name="已收藏点击" href="/collection/120052086" rel="noopener noreferrer" target="_blank">
+           已收藏
+           <!-- -->
+           1,043
+           <!-- -->
+           条内容
+           <svg class="Zi Zi--ArrowRight" fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+            </path>
+           </svg>
+          </a>
+         </div>
+         <div class="ExploreCollectionCard ExploreHomePage-collectionCard">
+          <div class="ExploreCollectionCard-header">
+           <div class="ExploreCollectionCard-info">
+            <a class="ExploreCollectionCard-title" data-za-detail-view-id="5804" data-za-detail-view-name="标题点击" href="/collection/145417966" rel="noopener noreferrer" target="_blank">
+             行业研究
+            </a>
+            <div class="ExploreCollectionCard-relatedMembers">
+             <div class="ExploreCollectionCard-creator">
+              <span class="UserLink ExploreCollectionCard-creatorAvatar">
+               <div class="Popover">
+                <div aria-expanded="false" aria-haspopup="true" aria-owns="null-content" id="null-toggle">
+                 <a class="UserLink-link" data-za-detail-view-element_name="User" data-za-detail-view-id="5806" href="//www.zhihu.com/people/fan-xue-gang" target="_blank">
+                  <img alt="樊雪刚" class="Avatar UserLink-avatar" height="28" src="https://pic3.zhimg.com/408d9c256_is.jpg" srcset="https://pic3.zhimg.com/408d9c256_im.jpg 2x" width="28"/>
+                 </a>
+                </div>
+               </div>
+              </span>
+              <a class="ExploreCollectionCard-creatorName" data-za-detail-view-id="5806" href="/people/fan-xue-gang" rel="noopener noreferrer" target="_blank">
+               樊雪刚
+              </a>
+              <span class="ExploreCollectionCard-creatorSuffix">
+               创建
+              </span>
+             </div>
+             <div class="ExploreCollectionCard-followers">
+              551
+              <!-- -->
+              人关注
+             </div>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-followButton">
+            <button class="ExploreFollowButton">
+             关注收藏夹
+            </button>
+           </div>
+          </div>
+          <div class="ExploreCollectionCard-contentList">
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://www.zhihu.com/answer/587062747" rel="noopener noreferrer" target="_blank">
+             如何看待咪蒙发道歉信：公号停更2个月 微博永久关停？
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             匿名用户：看到热搜标题的时候，我还以为咪蒙道歉是因为把瞎编的事件标榜成“非虚构”，没想到是因为她13年发布的不爱国言论。 没错，13年。 作为一个直男，我是很看不上咪蒙的。最早在《独唱团》看到咪蒙的文章，我以为她是文艺青年，没想到她后来会成为《致贱人》等…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              回答
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              5 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              5 评论
+             </span>
+            </div>
+           </div>
+           <div class="ExploreCollectionCard-contentItem">
+            <a class="ExploreCollectionCard-contentTitle" data-za-detail-view-id="5807" href="https://www.zhihu.com/answer/657571930" rel="noopener noreferrer" target="_blank">
+             如何看待「丈夫忘买鸡腿被妻子捅死」一事？
+            </a>
+            <div class="ExploreCollectionCard-contentExcerpt">
+             谧霖CalmRain：现在是我国两性关系格局最混乱的时期。 一些媒体正在大批量地，
+             <b>
+              将女性变为反智的施害者。
+             </b>
+             比如今年的女性买房营销，很多营销号表示：女人要独立，因为男人靠不住。很明显，这是营销的话术，可惜的是，确实有人就不明白这个逻辑。独立需要原因么？如果需要，…
+            </div>
+            <div class="ExploreCollectionCard-contentTags">
+             <span class="ExploreCollectionCard-contentTypeTag">
+              回答
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              156 赞同
+             </span>
+             <span class="ExploreCollectionCard-contentCountTag">
+              42 评论
+             </span>
+            </div>
+           </div>
+          </div>
+          <a class="ExploreCollectionCard-collectedContentCount" data-za-detail-view-id="5804" data-za-detail-view-name="已收藏点击" href="/collection/145417966" rel="noopener noreferrer" target="_blank">
+           已收藏
+           <!-- -->
+           33,215
+           <!-- -->
+           条内容
+           <svg class="Zi Zi--ArrowRight" fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+            </path>
+           </svg>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="ExploreHomePage-ContentSection-moreButton">
+        <a data-za-detail-view-id="5808" href="/collection/hot" rel="noreferrer noopener" target="_blank">
+         查看更多收藏夹
+         <svg class="Zi Zi--ArrowRight" fill="currentColor" height="25" viewbox="0 0 24 24" width="25">
+          <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+          </path>
+         </svg>
+        </a>
+       </div>
+      </div>
+      <div class="ExploreHomePage-ContentSection ExploreHomePage-section" id="column">
+       <div class="ExploreHomePage-ContentSection-header">
+        <svg class="Zi Zi--EditCircle" fill="currentColor" height="36" viewbox="0 0 24 24" width="36">
+         <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm4.043-15.524a.745.745 0 0 0-1.053.017l-6.857 7.071 2.237 2.17 6.857-7.071a.743.743 0 0 0-.016-1.052l-1.168-1.135zm-9.028 9.476l-.348 1.381 1.37-.39 1.274-.36-1.973-1.916-.323 1.285z" fill-rule="evenodd">
+         </path>
+        </svg>
+        <span>
+         专栏
+        </span>
+       </div>
+       <div class="ExploreHomePage-ContentSection-body">
+        <div class="ExploreHomePage-columns">
+         <div class="ExploreColumnCard ExploreHomePage-columnCard">
+          <a class="ExploreColumnCard-avatar" data-za-detail-view-id="5810" data-za-detail-view-name="专栏头像点击" href="https://zhuanlan.zhihu.com/c_201557035" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic1.zhimg.com/v2-ff5f252b658b6574c0284f8269c462d5_xl.jpg"/>
+          </a>
+          <a class="ExploreColumnCard-title" data-za-detail-view-id="5810" data-za-detail-view-name="专栏名称点击" href="https://zhuanlan.zhihu.com/c_201557035" rel="noreferrer noopener" target="_blank">
+           电竞GO
+          </a>
+          <div class="ExploreColumnCard-count">
+           <span>
+            18,929
+            <!-- -->
+            关注
+           </span>
+           <span>
+            1,702
+            <!-- -->
+            文章
+           </span>
+          </div>
+          <div class="ExploreColumnCard-intro">
+           DOTA2赛事比分、数据资讯：esgo.com
+          </div>
+          <button class="ExploreColumnCard-entryButton">
+           进入专栏
+          </button>
+         </div>
+         <div class="ExploreColumnCard ExploreHomePage-columnCard">
+          <a class="ExploreColumnCard-avatar" data-za-detail-view-id="5810" data-za-detail-view-name="专栏头像点击" href="https://zhuanlan.zhihu.com/Creep-1212" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic4.zhimg.com/v2-b7024f6228f19b5d8051fc30ff3a548b_xl.jpg"/>
+          </a>
+          <a class="ExploreColumnCard-title" data-za-detail-view-id="5810" data-za-detail-view-name="专栏名称点击" href="https://zhuanlan.zhihu.com/Creep-1212" rel="noreferrer noopener" target="_blank">
+           DogeGamer
+          </a>
+          <div class="ExploreColumnCard-count">
+           <span>
+            4,751
+            <!-- -->
+            关注
+           </span>
+           <span>
+            582
+            <!-- -->
+            文章
+           </span>
+          </div>
+          <div class="ExploreColumnCard-intro">
+           DOTA2 赛事回顾
+          </div>
+          <button class="ExploreColumnCard-entryButton">
+           进入专栏
+          </button>
+         </div>
+         <div class="ExploreColumnCard ExploreHomePage-columnCard">
+          <a class="ExploreColumnCard-avatar" data-za-detail-view-id="5810" data-za-detail-view-name="专栏头像点击" href="https://zhuanlan.zhihu.com/eespanol" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic3.zhimg.com/v2-d45c0aa6694dcaa0b3b19aaa1d985f07_xl.jpg"/>
+          </a>
+          <a class="ExploreColumnCard-title" data-za-detail-view-id="5810" data-za-detail-view-name="专栏名称点击" href="https://zhuanlan.zhihu.com/eespanol" rel="noreferrer noopener" target="_blank">
+           上外星星西语老板娘
+          </a>
+          <div class="ExploreColumnCard-count">
+           <span>
+            1,165
+            <!-- -->
+            关注
+           </span>
+           <span>
+            125
+            <!-- -->
+            文章
+           </span>
+          </div>
+          <div class="ExploreColumnCard-intro">
+           此去经年，与西班牙语长相厮守
+          </div>
+          <button class="ExploreColumnCard-entryButton">
+           进入专栏
+          </button>
+         </div>
+         <div class="ExploreColumnCard ExploreHomePage-columnCard">
+          <a class="ExploreColumnCard-avatar" data-za-detail-view-id="5810" data-za-detail-view-name="专栏头像点击" href="https://zhuanlan.zhihu.com/beasleynation" rel="noreferrer noopener" target="_blank">
+           <img src="https://pic1.zhimg.com/cd516751a1e7678cf4118e6915ccecef_xl.jpg"/>
+          </a>
+          <a class="ExploreColumnCard-title" data-za-detail-view-id="5810" data-za-detail-view-name="专栏名称点击" href="https://zhuanlan.zhihu.com/beasleynation" rel="noreferrer noopener" target="_blank">
+           篮外空心
+          </a>
+          <div class="ExploreColumnCard-count">
+           <span>
+            9,965
+            <!-- -->
+            关注
+           </span>
+           <span>
+            310
+            <!-- -->
+            文章
+           </span>
+          </div>
+          <div class="ExploreColumnCard-intro">
+           关于篮球、NBA、马刺，以及其他。
+          </div>
+          <button class="ExploreColumnCard-entryButton">
+           进入专栏
+          </button>
+         </div>
+        </div>
+       </div>
+       <div class="ExploreHomePage-ContentSection-moreButton">
+        <a data-za-detail-view-id="5811" href="https://zhuanlan.zhihu.com" rel="noreferrer noopener" target="_blank">
+         查看更多专栏
+         <svg class="Zi Zi--ArrowRight" fill="currentColor" height="25" viewbox="0 0 24 24" width="25">
+          <path d="M9.218 16.78a.737.737 0 0 0 1.052 0l4.512-4.249a.758.758 0 0 0 0-1.063L10.27 7.22a.737.737 0 0 0-1.052 0 .759.759 0 0 0-.001 1.063L13 12l-3.782 3.716a.758.758 0 0 0 0 1.063z" fill-rule="evenodd">
+          </path>
+         </svg>
+        </a>
+       </div>
+      </div>
+      <footer class="PageBottomFooter ExploreHomePage-footer">
+       <a href="https://liukanshan.zhihu.com" rel="noopener noreferrer" target="_blank">
+        刘看山
+       </a>
+       <a href="https://www.zhihu.com/question/19581624" rel="noopener noreferrer" target="_blank">
+        知乎指南
+       </a>
+       <a href="https://www.zhihu.com/terms" rel="noopener noreferrer" target="_blank">
+        知乎协议
+       </a>
+       <a href="https://www.zhihu.com/app" rel="noopener noreferrer" target="_blank">
+        应用
+       </a>
+       <a href="https://app.mokahr.com/apply/zhihu/3819" rel="noopener noreferrer" target="_blank">
+        工作
+       </a>
+       <a href="https://www.zhihu.com/contact" rel="noopener noreferrer" target="_blank">
+        联系我们
+       </a>
+       <span>
+        ©
+        <!-- -->
+        2020
+        <!-- -->
+        知乎
+       </span>
+      </footer>
+     </div>
+    </main>
+    <div data-zop-usertoken="{}">
+    </div>
+   </div>
+  </div>
+  <script id="js-clientConfig" type="text/json">
+   {"host":"zhihu.com","protocol":"https:","wwwHost":"www.zhihu.com","fetchRoot":{"www":"https:\u002F\u002Fwww.zhihu.com","api":"https:\u002F\u002Fapi.zhihu.com","zhuanlan":"https:\u002F\u002Fzhuanlan.zhihu.com"}}
+  </script>
+  <script id="js-initialData" type="text/json">
+   {"initialState":{"common":{"ask":{}},"loading":{"global":{"count":0},"local":{"explore\u002FgetLatestSpecials\u002F":false,"explore\u002FgetLatestRoundtables\u002F":false,"explore\u002FgetHotCollections\u002F":false,"explore\u002FgetRecommendColumns\u002F":false}},"entities":{"users":{},"questions":{},"answers":{},"articles":{},"columns":{},"topics":{},"roundtables":{},"favlists":{},"comments":{},"notifications":{},"ebooks":{},"activities":{},"feeds":{},"pins":{},"promotions":{},"drafts":{},"chats":{},"posts":{},"clubs":{},"clubTags":{}},"currentUser":"","account":{"lockLevel":{},"unlockTicketStatus":false,"unlockTicket":null,"challenge":[],"errorStatus":false,"message":"","isFetching":false,"accountInfo":{},"urlToken":{"loading":false}},"settings":{"socialBind":null,"inboxMsg":null,"notification":{},"email":{},"privacyFlag":null,"blockedUsers":{"isFetching":false,"paging":{"pageNo":1,"pageSize":6},"data":[]},"blockedFollowees":{"isFetching":false,"paging":{"pageNo":1,"pageSize":6},"data":[]},"ignoredTopics":{"isFetching":false,"paging":{"pageNo":1,"pageSize":6},"data":[]},"restrictedTopics":null,"laboratory":{}},"notification":{},"people":{"profileStatus":{},"activitiesByUser":{},"answersByUser":{},"answersSortByVotesByUser":{},"answersIncludedByUser":{},"votedAnswersByUser":{},"thankedAnswersByUser":{},"voteAnswersByUser":{},"thankAnswersByUser":{},"topicAnswersByUser":{},"articlesByUser":{},"articlesSortByVotesByUser":{},"articlesIncludedByUser":{},"pinsByUser":{},"questionsByUser":{},"commercialQuestionsByUser":{},"favlistsByUser":{},"followingByUser":{},"followersByUser":{},"mutualsByUser":{},"followingColumnsByUser":{},"followingQuestionsByUser":{},"followingFavlistsByUser":{},"followingTopicsByUser":{},"publicationsByUser":{},"columnsByUser":{},"allFavlistsByUser":{},"brands":null,"creationsByUser":{},"creationsSortByVotesByUser":{}},"env":{"ab":{"config":{"experiments":[{"expId":"launch-us_foltopic_user-10","expPrefix":"us_foltopic_user","isDynamicallyUpdated":true,"isRuntime":false,"includeTriggerInfo":false},{"expId":"se_topicfeed-1","expPrefix":"se_topicfeed","isDynamicallyUpdated":true,"isRuntime":false,"includeTriggerInfo":false}],"params":[{"id":"se_new_merger","type":"String","value":"1","chainId":"_all_"},{"id":"li_paid_answer_exp","type":"String","value":"0","chainId":"_all_"},{"id":"qap_payc_invite","type":"String","value":"0","chainId":"_all_"},{"id":"se_pek_test","type":"String","value":"1","chainId":"_all_"},{"id":"li_album_liutongab","type":"String","value":"0","chainId":"_all_"},{"id":"web_answerlist_ad","type":"String","value":"0"},{"id":"zr_se_new_xgb","type":"String","value":"0","chainId":"_all_"},{"id":"se_sug_entrance","type":"String","value":"0","chainId":"_all_"},{"id":"tp_topic_entry","type":"String","value":"0","chainId":"_all_"},{"id":"se_use_zitem","type":"String","value":"0","chainId":"_all_"},{"id":"zr_video_rank_nn","type":"String","value":"new_rank","chainId":"_all_"},{"id":"se_ltr_cp_new","type":"String","value":"0","chainId":"_all_"},{"id":"se_ad_index","type":"String","value":"10","chainId":"_all_"},{"id":"sem_up_growth","type":"String","value":"in_app","chainId":"_all_"},{"id":"se_whitelist","type":"String","value":"0","chainId":"_all_"},{"id":"web_column_auto_invite","type":"String","value":"0"},{"id":"se_waterfall","type":"String","value":"0","chainId":"_all_"},{"id":"tp_qa_metacard_top","type":"String","value":"top","chainId":"_all_"},{"id":"zr_slot_training","type":"String","value":"1","chainId":"_all_"},{"id":"tp_qa_toast","type":"String","value":"1","chainId":"_all_"},{"id":"top_root","type":"String","value":"0","chainId":"_all_"},{"id":"web_sem_ab","type":"String","value":"1"},{"id":"li_sku_bottom_bar_re","type":"String","value":"0","chainId":"_all_"},{"id":"se_cp2","type":"String","value":"0","chainId":"_all_"},{"id":"soc_leave_recommend","type":"String","value":"2","chainId":"_all_"},{"id":"top_hotcommerce","type":"String","value":"1","chainId":"_all_"},{"id":"ls_zvideo_license","type":"String","value":"1","chainId":"_all_"},{"id":"ls_fmp4","type":"String","value":"0","chainId":"_all_"},{"id":"li_purchase_test","type":"String","value":"0","chainId":"_all_"},{"id":"zr_expslotpaid","type":"String","value":"1","chainId":"_all_"},{"id":"zr_slotpaidexp","type":"String","value":"1","chainId":"_all_"},{"id":"se_entity_model_14","type":"String","value":"0","chainId":"_all_"},{"id":"li_android_vip","type":"String","value":"0","chainId":"_all_"},{"id":"gue_thanks","type":"String","value":"0"},{"id":"soc_zcfw_shipinshiti","type":"String","value":"0","chainId":"_all_"},{"id":"li_vip_no_ad_mon","type":"String","value":"0","chainId":"_all_"},{"id":"tsp_vote","type":"String","value":"2","chainId":"_all_"},{"id":"pf_noti_entry_num","type":"String","value":"0","chainId":"_all_"},{"id":"se_cardrank_1","type":"String","value":"0","chainId":"_all_"},{"id":"tp_club_join","type":"String","value":"0","chainId":"_all_"},{"id":"li_query_match","type":"String","value":"0","chainId":"_all_"},{"id":"zr_km_style","type":"String","value":"base","chainId":"_all_"},{"id":"se_dnn_unbias","type":"String","value":"1","chainId":"_all_"},{"id":"se_topicfeed","type":"String","value":"0","chainId":"_all_"},{"id":"soc_zcfw_broadcast","type":"String","value":"0","chainId":"_all_"},{"id":"gue_card_test","type":"String","value":"4"},{"id":"web_question_invite","type":"String","value":"B"},{"id":"tp_club_android_join","type":"String","value":"0","chainId":"_all_"},{"id":"tp_score_1","type":"String","value":"a","chainId":"_all_"},{"id":"zr_des_detail","type":"String","value":"0","chainId":"_all_"},{"id":"tp_club_tab","type":"String","value":"0","chainId":"_all_"},{"id":"tp_club_feed","type":"String","value":"0","chainId":"_all_"},{"id":"zr_answer_rec_cp","type":"String","value":"open","chainId":"_all_"},{"id":"zr_km_sku_thres","type":"String","value":"false","chainId":"_all_"},{"id":"se_hotmore","type":"String","value":"2","chainId":"_all_"},{"id":"se_time_threshold","type":"String","value":"0","chainId":"_all_"},{"id":"se_new_topic","type":"String","value":"0","chainId":"_all_"},{"id":"se_topiclabel","type":"String","value":"1","chainId":"_all_"},{"id":"tp_sft","type":"String","value":"a","chainId":"_all_"},{"id":"tp_topic_rec","type":"String","value":"0","chainId":"_all_"},{"id":"li_qa_btn_text","type":"String","value":"0","chainId":"_all_"},{"id":"zr_km_sku_mix","type":"String","value":"sku_20","chainId":"_all_"},{"id":"ug_follow_answerer","type":"String","value":"0","chainId":"_all_"},{"id":"qap_thanks","type":"String","value":"1","chainId":"_all_"},{"id":"se_ltr_dnn_cp","type":"String","value":"0","chainId":"_all_"},{"id":"se_cardrank_2","type":"String","value":"1","chainId":"_all_"},{"id":"li_tjys_ec_ab","type":"String","value":"0","chainId":"_all_"},{"id":"li_ebook_audio","type":"String","value":"0","chainId":"_all_"},{"id":"se_site_onebox","type":"String","value":"0","chainId":"_all_"},{"id":"se_agency","type":"String","value":" 0","chainId":"_all_"},{"id":"se_multi_task_new","type":"String","value":"2","chainId":"_all_"},{"id":"tsp_redirecthotlist","type":"String","value":"1","chainId":"_all_"},{"id":"gue_goods_card","type":"String","value":"0"},{"id":"zw_payc_qaedit","type":"String","value":"0","chainId":"_all_"},{"id":"se_related_index","type":"String","value":"3","chainId":"_all_"},{"id":"se_p_slideshow","type":"String","value":"0","chainId":"_all_"},{"id":"web_heifetz_grow_ad","type":"String","value":"1"},{"id":"web_answer_list_ad","type":"String","value":"1"},{"id":"tp_club_pk","type":"String","value":"0","chainId":"_all_"},{"id":"zr_rel_search","type":"String","value":"base","chainId":"_all_"},{"id":"se_ab","type":"String","value":"0","chainId":"_all_"},{"id":"se_sug","type":"String","value":"1","chainId":"_all_"},{"id":"se_cardrank_3","type":"String","value":"0","chainId":"_all_"},{"id":"li_pay_banner_type","type":"String","value":"6","chainId":"_all_"},{"id":"se_expired_ob","type":"String","value":"0","chainId":"_all_"},{"id":"se_preset_tech","type":"String","value":"0","chainId":"_all_"},{"id":"se_college_cm","type":"String","value":"0","chainId":"_all_"},{"id":"li_qa_cover","type":"String","value":"old","chainId":"_all_"},{"id":"se_featured","type":"String","value":"1","chainId":"_all_"},{"id":"web_ad_banner","type":"String","value":"0"},{"id":"zr_art_rec","type":"String","value":"base","chainId":"_all_"},{"id":"tp_sticky_android","type":"String","value":"2","chainId":"_all_"},{"id":"se_preset_label","type":"String","value":"1","chainId":"_all_"},{"id":"se_rel_search","type":"String","value":"0","chainId":"_all_"},{"id":"top_ebook","type":"String","value":"0","chainId":"_all_"},{"id":"ls_zvideo_rec","type":"String","value":"2","chainId":"_all_"},{"id":"li_hot_score_ab","type":"String","value":"0","chainId":"_all_"},{"id":"zr_video_rank","type":"String","value":"new_rank","chainId":"_all_"},{"id":"soc_newfeed","type":"String","value":"0","chainId":"_all_"},{"id":"pf_fuceng","type":"String","value":"1","chainId":"_all_"},{"id":"se_movietab","type":"String","value":"1","chainId":"_all_"},{"id":"tp_club_header","type":"String","value":"1","chainId":"_all_"},{"id":"ug_follow_topic_1","type":"String","value":"2","chainId":"_all_"},{"id":"top_ydyq","type":"String","value":"X","chainId":"_all_"},{"id":"li_de","type":"String","value":"no","chainId":"_all_"},{"id":"gue_zhuantikapian","type":"String","value":"0"},{"id":"se_bert_v2","type":"String","value":"0","chainId":"_all_"},{"id":"tp_club_qa","type":"String","value":"1","chainId":"_all_"},{"id":"tp_club_qa_pic","type":"String","value":"0","chainId":"_all_"},{"id":"ug_zero_follow_0","type":"String","value":"0","chainId":"_all_"},{"id":"li_qc_pt","type":"String","value":"0","chainId":"_all_"},{"id":"zr_ans_rec","type":"String","value":"gbrank","chainId":"_all_"},{"id":"zr_search_satisfied","type":"String","value":"0","chainId":"_all_"},{"id":"se_college","type":"String","value":"default","chainId":"_all_"},{"id":"se_subtext","type":"String","value":"0","chainId":"_all_"},{"id":"li_se_section","type":"String","value":"0","chainId":"_all_"},{"id":"zr_paid_answer_exp","type":"String","value":"0","chainId":"_all_"},{"id":"tp_topic_style","type":"String","value":"0","chainId":"_all_"},{"id":"tp_topic_tab","type":"String","value":"0","chainId":"_all_"},{"id":"se_cardrank_4","type":"String","value":"1","chainId":"_all_"},{"id":"pf_foltopic_usernum","type":"String","value":"50","chainId":"_all_"},{"id":"li_sc","type":"String","value":"no","chainId":"_all_"},{"id":"zw_sameq_sorce","type":"String","value":"999","chainId":"_all_"},{"id":"tp_meta_card","type":"String","value":"0","chainId":"_all_"},{"id":"gue_bullet_second","type":"String","value":"0"},{"id":"se_wannasearch","type":"String","value":"0","chainId":"_all_"},{"id":"soc_yxzl_zcfw","type":"String","value":"0","chainId":"_all_"},{"id":"top_new_feed","type":"String","value":"5","chainId":"_all_"},{"id":"zr_km_feed_nlp","type":"String","value":"old","chainId":"_all_"},{"id":"ug_goodcomment_0","type":"String","value":"1","chainId":"_all_"},{"id":"ug_zero_follow","type":"String","value":"0","chainId":"_all_"},{"id":"zr_video_recall","type":"String","value":"current_recall","chainId":"_all_"},{"id":"se_timebox_up","type":"String","value":"0","chainId":"_all_"},{"id":"top_quality","type":"String","value":"0","chainId":"_all_"},{"id":"soc_cardheight","type":"String","value":"0","chainId":"_all_"},{"id":"soc_wonderuser_recom","type":"String","value":"2","chainId":"_all_"},{"id":"qap_question_visitor","type":"String","value":" 0","chainId":"_all_"},{"id":"se_col_boost","type":"String","value":"0","chainId":"_all_"},{"id":"se_lottery","type":"String","value":"0","chainId":"_all_"},{"id":"qap_question_author","type":"String","value":"0","chainId":"_all_"},{"id":"se_likebutton","type":"String","value":"0","chainId":"_all_"},{"id":"se_auto_syn","type":"String","value":"0","chainId":"_all_"},{"id":"se_pek_test2","type":"String","value":"1","chainId":"_all_"},{"id":"tsp_hotlist_ui","type":"String","value":"1","chainId":"_all_"},{"id":"ls_videoad","type":"String","value":"2","chainId":"_all_"},{"id":"web_answer_update","type":"String","value":"0"},{"id":"zr_km_answer","type":"String","value":"open_cvr","chainId":"_all_"},{"id":"se_hot_timebox","type":"String","value":"0","chainId":"_all_"},{"id":"soc_zcfw_badcase","type":"String","value":"0","chainId":"_all_"},{"id":"li_salt_hot","type":"String","value":"0","chainId":"_all_"},{"id":"se_aa_base","type":"String","value":"0","chainId":"_all_"},{"id":"se_payconsult","type":"String","value":"0","chainId":"_all_"},{"id":"soc_update","type":"String","value":"1","chainId":"_all_"},{"id":"tp_sft_v2","type":"String","value":"d","chainId":"_all_"},{"id":"soc_notification","type":"String","value":"0","chainId":"_all_"},{"id":"soc_authormore","type":"String","value":"2","chainId":"_all_"},{"id":"pf_newguide_vertical","type":"String","value":"0","chainId":"_all_"},{"id":"li_video_section","type":"String","value":"0","chainId":"_all_"},{"id":"zr_slot_cold_start","type":"String","value":"aver","chainId":"_all_"},{"id":"zr_rec_answer_cp","type":"String","value":"close","chainId":"_all_"},{"id":"se_entity_model","type":"String","value":"0","chainId":"_all_"},{"id":"ug_newtag","type":"String","value":"0","chainId":"_all_"},{"id":"se_famous","type":"String","value":"1","chainId":"_all_"},{"id":"soc_brdcst3","type":"String","value":"0","chainId":"_all_"},{"id":"se_webmajorob","type":"String","value":"0","chainId":"_all_"},{"id":"se_senet","type":"String","value":"0","chainId":"_all_"},{"id":"soc_zcfw_broadcast2","type":"String","value":"1","chainId":"_all_"},{"id":"pf_creator_card","type":"String","value":"1","chainId":"_all_"},{"id":"li_answer_card","type":"String","value":"0","chainId":"_all_"},{"id":"zr_km_slot_style","type":"String","value":"event_card","chainId":"_all_"},{"id":"gue_bullet_guide","type":"String","value":"发个弹幕聊聊…"},{"id":"se_ios_spb309","type":"String","value":"0","chainId":"_all_"},{"id":"se_search_feed","type":"String","value":"N","chainId":"_all_"},{"id":"tp_topic_head","type":"String","value":"0","chainId":"_all_"},{"id":"soc_special","type":"String","value":"0","chainId":"_all_"},{"id":"zr_intervene","type":"String","value":"0","chainId":"_all_"},{"id":"se_zu_onebox","type":"String","value":"0","chainId":"_all_"},{"id":"se_multianswer","type":"String","value":"0","chainId":"_all_"},{"id":"li_vip_lr","type":"String","value":"0","chainId":"_all_"},{"id":"zr_article_new","type":"String","value":"close","chainId":"_all_"},{"id":"se_club_post","type":"String","value":"5","chainId":"_all_"},{"id":"li_se_media_icon","type":"String","value":"1","chainId":"_all_"},{"id":"web_unfriendly_comm","type":"String","value":"0"},{"id":"se_perf","type":"String","value":"0","chainId":"_all_"},{"id":"ug_fw_answ_aut_1","type":"String","value":"0","chainId":"_all_"},{"id":"se_spb309","type":"String","value":"0","chainId":"_all_"},{"id":"se_webtimebox","type":"String","value":"0","chainId":"_all_"},{"id":"se_backsearch","type":"String","value":"0","chainId":"_all_"},{"id":"se_amovietab","type":"String","value":"1","chainId":"_all_"},{"id":"li_qa_new_cover","type":"String","value":"1","chainId":"_all_"},{"id":"se_member_rescore","type":"String","value":"0","chainId":"_all_"},{"id":"tp_m_intro_re_topic","type":"String","value":"1","chainId":"_all_"},{"id":"gue_anonymous","type":"String","value":"show"},{"id":"se_zu_recommend","type":"String","value":"0","chainId":"_all_"},{"id":"soc_bignew","type":"String","value":"1","chainId":"_all_"},{"id":"soc_zuichangfangwen","type":"String","value":"0","chainId":"_all_"},{"id":"tp_qa_metacard","type":"String","value":"1","chainId":"_all_"},{"id":"soc_stickypush","type":"String","value":"0","chainId":"_all_"},{"id":"li_cln_vl","type":"String","value":"no","chainId":"_all_"},{"id":"qap_ques_invite","type":"String","value":"0","chainId":"_all_"},{"id":"se_websearch","type":"String","value":"3","chainId":"_all_"},{"id":"tp_header_style","type":"String","value":"1","chainId":"_all_"},{"id":"se_pek_test3","type":"String","value":"1","chainId":"_all_"},{"id":"se_hotsearch","type":"String","value":"0","chainId":"_all_"},{"id":"se_billboardsearch","type":"String","value":"0","chainId":"_all_"},{"id":"gue_new_special_page","type":"String","value":"0"},{"id":"se_webrs","type":"String","value":"1","chainId":"_all_"},{"id":"soc_bigone","type":"String","value":"0","chainId":"_all_"},{"id":"zr_test_aa1","type":"String","value":"0","chainId":"_all_"},{"id":"se_colorfultab","type":"String","value":"1","chainId":"_all_"},{"id":"web_n_web_msg","type":"String","value":"0"},{"id":"top_universalebook","type":"String","value":"1","chainId":"_all_"},{"id":"ug_follow_answerer_0","type":"String","value":"0","chainId":"_all_"},{"id":"li_se_heat","type":"String","value":"1","chainId":"_all_"},{"id":"se_adxtest","type":"String","value":"1","chainId":"_all_"},{"id":"soc_ri_merge","type":"String","value":"0","chainId":"_all_"},{"id":"top_v_album","type":"String","value":"1","chainId":"_all_"},{"id":"top_test_4_liguangyi","type":"String","value":"1","chainId":"_all_"},{"id":"li_se_across","type":"String","value":"0","chainId":"_all_"},{"id":"se_mobileweb","type":"String","value":"1","chainId":"_all_"}],"chains":[{"chainId":"_all_"}]},"triggers":{}},"userAgent":{"Edge":false,"Wechat":false,"Weibo":false,"QQ":false,"MQQBrowser":false,"Qzone":false,"Mobile":false,"Android":false,"iOS":false,"isAppleDevice":true,"Zhihu":false,"ZhihuHybrid":false,"isBot":false,"Tablet":false,"UC":false,"Sogou":false,"Qihoo":false,"Baidu":false,"BaiduApp":false,"Safari":false,"GoogleBot":false,"AndroidDaily":false,"iOSDaily":false,"isWebView":false,"origin":"Mozilla\u002F5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit\u002F537.36 (KHTML, like Gecko) Chrome\u002F79.0.3945.117 Safari\u002F537.36"},"appViewConfig":{},"ctx":{"path":"\u002Fexplore"},"trafficSource":"production","edition":{"baidu":false,"sogou":false,"baiduBeijing":false,"sogouBeijing":false,"sogouInput":false},"theme":"light","enableShortcut":true,"referer":"","conf":{},"ipInfo":{},"logged":false},"me":{"columnContributions":[]},"label":{"recognizerLists":{}},"ecommerce":{},"comments":{"pagination":{},"collapsed":{},"reverse":{},"reviewing":{},"conversation":{},"parent":{}},"commentsV2":{"stickers":[],"commentWithPicPermission":{},"notificationsComments":{},"pagination":{},"collapsed":{},"reverse":{},"reviewing":{},"conversation":{},"conversationMore":{},"parent":{}},"pushNotifications":{"default":{"isFetching":false,"isDrained":false,"ids":[]},"follow":{"isFetching":false,"isDrained":false,"ids":[]},"vote_thank":{"isFetching":false,"isDrained":false,"ids":[]},"currentTab":"default","notificationsCount":{"default":0,"follow":0,"vote_thank":0}},"messages":{"data":{},"currentTab":"common","messageCount":0},"register":{"registerValidateSucceeded":null,"registerValidateErrors":{},"registerConfirmError":null,"sendDigitsError":null,"registerConfirmSucceeded":null},"login":{"loginUnregisteredError":false,"loginBindWechatError":false,"loginConfirmError":null,"sendDigitsError":null,"needSMSIdentify":false,"validateDigitsError":false,"loginConfirmSucceeded":null,"qrcodeLoginToken":"","qrcodeLoginScanStatus":0,"qrcodeLoginError":null,"qrcodeLoginReturnNewToken":false},"active":{"sendDigitsError":null,"activeConfirmSucceeded":null,"activeConfirmError":null},"switches":{},"captcha":{"captchaNeeded":false,"captchaValidated":false,"captchaBase64String":null,"captchaValidationMessage":null,"loginCaptchaExpires":false},"sms":{"supportedCountries":[]},"chat":{"chats":{},"inbox":{"recents":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"strangers":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"friends":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"search":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"config":{"newCount":0,"strangerMessageSwitch":false,"strangerMessageUnread":false,"friendCount":0}},"global":{"isChatMqttExisted":false}},"emoticons":{"emoticonGroupList":[],"emoticonGroupDetail":{}},"creator":{"currentCreatorUrlToken":null,"homeData":{"recommendQuestions":[]},"tools":{"question":{"invitationCount":{"questionFolloweeCount":0,"questionTotalCount":0},"goodatTopics":[]},"customPromotion":{"itemLists":{}},"recommend":{"recommendTimes":{}}},"explore":{"academy":{"tabs":[],"article":{}}},"rights":[],"rightsStatus":{},"levelUpperLimit":10,"account":{"growthLevel":{}},"mcn":{},"applyStatus":{}},"question":{"followers":{},"concernedFollowers":{},"answers":{},"hiddenAnswers":{},"updatedAnswers":{},"collapsedAnswers":{},"notificationAnswers":{},"invitedQuestions":{"total":{"count":null,"isEnd":false,"isLoading":false,"questions":[]},"followees":{"count":null,"isEnd":false,"isLoading":false,"questions":[]}},"laterQuestions":{"count":null,"globalWriteAnimate":false,"isEnd":false,"isLoading":false,"questions":[]},"waitingQuestions":{"hot":{"isEnd":false,"isLoading":false,"questions":[]},"value":{"isEnd":false,"isLoading":false,"questions":[]},"newest":{"isEnd":false,"isLoading":false,"questions":[]},"easy":{"isEnd":false,"isLoading":false,"questions":[]}},"invitationCandidates":{},"inviters":{},"invitees":{},"similarQuestions":{},"relatedCommodities":{},"recommendReadings":{},"bio":{},"brand":{},"permission":{},"adverts":{},"advancedStyle":{},"commonAnswerCount":0,"hiddenAnswerCount":0,"meta":{},"autoInvitation":{},"simpleConcernedFollowers":{},"draftStatus":{},"disclaimers":{}},"shareTexts":{},"answers":{"voters":{},"copyrightApplicants":{},"favlists":{},"newAnswer":{},"concernedUpvoters":{},"simpleConcernedUpvoters":{},"paidContent":{},"settings":{}},"banner":{},"topic":{"bios":{},"hot":{},"newest":{},"top":{},"unanswered":{},"questions":{},"followers":{},"contributors":{},"parent":{},"children":{},"bestAnswerers":{},"wikiMeta":{},"index":{},"intro":{},"meta":{},"schema":{},"creatorWall":{},"wikiEditInfo":{},"committedWiki":{},"landingBasicData":{},"landingExcellentItems":[],"landingExcellentEditors":[],"landingCatalog":[],"landingEntries":{}},"explore":{"recommendations":{},"specials":{"entities":{"19555698":{"contentList":[{"id":"958657380","title":"今年本命年，准备换个红色用几天","type":"answer","sectionId":"1198197924314968064","sectionTitle":"2020 年强推头像"},{"id":"909165301","title":"低调中透露着一点沙雕，沙雕中带着一丝欢笑！","type":"answer","sectionId":"1198200372441956352","sectionTitle":"经典沙雕头像集合"},{"id":"854506585","title":"ғᴀʟʟ ɪɴ ғᴀʟʟ, ғᴀʟʟ ɪɴ ʟᴏᴠᴇ  - 上","type":"answer","sectionId":"1198212055386181632","sectionTitle":"可爱又不明显的情头"}],"viewCount":22233700,"followersCount":69389,"isFollowing":false,"title":"新年新气象，从换「头」像开始","introduction":"你一整年的头像，知乎承包了！随时上知乎搜索「头像」，每天换新很容易。","banner":"https:\u002F\u002Fpic2.zhimg.com\u002F100\u002Fv2-4d4c145bab87b7042df2e507576fa12d_hd.png","updated":1578473232,"id":"19555698"},"19572342":{"contentList":[{"id":"102092976","title":"中国警察网正式入驻知乎！","type":"article","sectionId":"1198263721762709504","sectionTitle":"Wai？110吗？"},{"id":"308680568","title":"有什么事是当警察之后才懂的？","type":"question","sectionId":"1198260927152504832","sectionTitle":"警察知多少"},{"id":"365584679","title":"你有什么事会拨打110呢？","type":"question","sectionId":"1198263721762709504","sectionTitle":"Wai？110吗？"}],"viewCount":56404604,"followersCount":82118,"isFollowing":false,"title":"110宣传日","introduction":"全国第34个“110宣传日”来啦！","banner":"https:\u002F\u002Fpic1.zhimg.com\u002F100\u002Fv2-18c2e85308cca3bd96b65730fff53064_hd.png","updated":1578625867,"id":"19572342"},"19830520":{"contentList":[{"id":"365399848","title":"1 月 9 日特朗普宣布对伊朗实施新经济制裁，将对伊朗及国际经济局势产生哪些影响？","type":"question","sectionId":"1198222276150263808","sectionTitle":"影响 | 炸药桶四溅的火花"},{"id":"365389027","title":"1 月 9 日特朗普就伊朗空袭美军基地的讲话有哪些信息点？","type":"question","sectionId":"1198224740245200896","sectionTitle":"发声 | 战争迷雾下的众说纷纭"},{"id":"966886937","title":"中国阿拉伯国家研究院院长李绍先：伊朗是在「开炮」为美军送行","type":"answer","sectionId":"1198271220221902848","sectionTitle":"观点 | 战火会飘向何处"}],"viewCount":26097396,"followersCount":46494,"isFollowing":false,"title":"伊朗将军被暗杀后的 144 小时","introduction":"2020 年的世界依旧暗流涌动。将军被杀、双方声明、基地被袭、飞机坠毁、地震重重......当矛盾外显，当针锋相对，伊朗将军被暗杀后的 144 小时，都发生了什么？","banner":"https:\u002F\u002Fpic1.zhimg.com\u002F100\u002Fv2-8325f66a898e4f8987902c10ef4a95d8_hd.png","updated":1578565548,"id":"19830520"},"21218111":{"contentList":[{"id":"19679599","title":"大学期末考试如何复习？","type":"question","sectionId":"1197903182368833536","sectionTitle":"期末考复习指南"},{"id":"364063787","title":"最后出考场的考生，会被所有监考老师围观吗？","type":"question","sectionId":"1197903087648690176","sectionTitle":"考场内外"},{"id":"328937211","title":"为什么大学期末考试不开卷？","type":"question","sectionId":"1197903140329181184","sectionTitle":"大学期末考二三问"}],"viewCount":12849961,"followersCount":288,"isFollowing":false,"title":"醒醒，今天期末考试了","introduction":"大学期末考真的容易过吗？当你进入大学，不被要求高分，只需要一个 60 的时候，学习真的变得简单了吗......","banner":"https:\u002F\u002Fpic1.zhimg.com\u002F100\u002Fv2-6fd6997f88de19c623e1c9e9794727c8_hd.png","updated":1578408698,"id":"21218111"}},"order":["19572342","19830520","19555698","21218111"]},"roundtables":{"entities":{"qingyunianyeqingmei":{"startAt":1578659400,"name":"《庆余年》叶轻眉的故事","title":"《庆余年》叶轻眉的故事","color":"#1e1924","banner":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-58f85b82ff2bb695718b650630a3ddb3_hd.jpg","tinyBanner":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-70a5eb2a63361ad20ea6b1171ca12b03_hd.jpg","endAt":1579512600,"url":"\u002Froundtables\u002Fexplore\u002Fcards\u002Froundtable\u002Fqingyunianyeqingmei","followersCount":304,"intro":"《庆余年》是一本优秀的小说，也被改编成优秀的电视剧。关于庆余年的讨论很多，最有神秘感的无疑是范闲的妈妈，那个穿越而来的叶轻眉。如果以叶轻眉为主题写一个前传，应该注意那些点，都有哪些脑洞打开的想法？","isFollowing":false,"guests":[{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-9487a4e5cb71506d8f740d7b54393d39_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-baf321f7a9908cfe3d0a209cebb006fc_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-66dc8be833e3ecc441b73e18b3ab9e97_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-97dd95084e38a5f6b5be46c29612ff08_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002F50\u002Fv2-8fea886e540e412fec653d233e783107_hd.jpg"}],"questions":[{"followerCount":40,"title":"有哪些诗词，是你穿越后一定用的上的？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F365336400","type":"question","id":365336400,"answerCount":16},{"followerCount":7372,"title":"《庆余年》讲的是什么故事？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F358037227","type":"question","id":358037227,"answerCount":695},{"followerCount":1608,"title":"电视剧《庆余年》中有什么细思极恐的情节?","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F360528621","type":"question","id":360528621,"answerCount":366}],"logo":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-e0bb63eaca2fa557092258f1321184b6_hd.jpg","urlToken":"qingyunianyeqingmei"},"202001anime":{"startAt":1578382555,"name":"冬季动画大作战","title":"冬季动画大作战","color":"#7d98b3","banner":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-2e23ad4a96adfc0705ed8a27fb70ce59_hd.jpg","tinyBanner":"https:\u002F\u002Fpic2.zhimg.com\u002F50\u002Fv2-e94aabe1cc79111b060837f4dc2de620_hd.jpg","endAt":1579846197,"url":"\u002Froundtables\u002Fexplore\u002Fcards\u002Froundtable\u002F202001anime","followersCount":146,"intro":"冬季新番均已开播，这个时候我们是不是该倒上一杯「肥宅快乐水」？本次知乎动画举办冬季新番动画鉴赏圆桌，接下来我们开始追番修仙之旅。那么谁才是一月新番霸权？","isFollowing":false,"guests":[{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-dff9a8ec5e15ced5c31fd633e40eea4e_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-98ee7afe263b063b424cb0f124cbac68_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002F50\u002Fv2-0d3a326cae66b62fb96caf3f8d7f076e_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002F417b686261dcf6119909ad9da04c37a5_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-023486223bd3911c41dbcb8f0454b264_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-f415d2d2932df42f6035a23ea4b0c42e_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002F50\u002Fv2-d2f8cf6197bcebca943e4f82d1582b0b_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-33a474c51364aa24cd4e7d6ed74f0f74_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-81ca50b0bd7c9c7ec26feb0d3e8904c9_hd.jpg"}],"questions":[{"followerCount":36,"title":"如何评价2020年1月新番《猎龙飞船》？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F365398343","type":"question","id":365398343,"answerCount":12},{"followerCount":256,"title":"如何评价 2020 年 1 月新番《别对映像研出手！》？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F363145487","type":"question","id":363145487,"answerCount":62},{"followerCount":65,"title":"如何评价2020年1月新番《异度侵入 ID:INVADED》？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F364908924","type":"question","id":364908924,"answerCount":21}],"logo":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-945447ebfa1c17711571c6226494dee7_hd.jpg","urlToken":"202001anime"},"bannianhuo":{"startAt":1578376800,"name":"办年货，过新年","title":"办年货，过新年","color":"#b3342b","banner":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-0bebfe865e953dfd847b819d6dfa12ba_hd.jpg","tinyBanner":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-f9da5aebae01ae0b6ee66b0765e3a44a_hd.jpg","endAt":1579276740,"url":"\u002Froundtables\u002Fexplore\u002Fcards\u002Froundtable\u002Fbannianhuo","followersCount":781,"intro":"「过年回家带什么？走亲访友送什么？新年焕新穿什么？合家团圆吃什么？」你是否还在为这些问题发愁？不如来参加这次的「年货选购冲刺班」，看看知友们的选购秘籍！好物有很多，时间却不等人，春节越来越近，年货筹备正在火热进行中，快抓紧时间来围观「办年货，过新年」圆桌吧！","isFollowing":false,"guests":[{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-af0c93ebaa0ca0400c0c9b92fc59e5ea_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-f8d47257194e05ad3a540722939c7034_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-f5477f91c9ce2074a63c0e7f5ba4a478_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002F50\u002Fv2-e1fd3da4e7bc53c49820f6e119873167_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002F4d0346277_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-ebfb32ef38a8dd9d08d84d92b1bc2b15_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-b5a7359f66938841ff1ef395b4f39b55_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-656126bdc162192c743fecb29bae8f19_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-5d90f80a12a82ef839ec9ebabf86fbe4_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-3a1cad6650ff8f3aba2975451ae20c73_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-7c1e6c2355074b9828354dc08e59796c_hd.jpg"}],"questions":[{"followerCount":172,"title":"有哪些不俗的送男朋友的新年礼物？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F264876497","type":"question","id":264876497,"answerCount":36},{"followerCount":757,"title":"烘干机真的有必要买吗？该如何选购？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F289335655","type":"question","id":289335655,"answerCount":166},{"followerCount":3715,"title":"有什么好物能让每年一次的年底大扫除更加高效彻底？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F364278774","type":"question","id":364278774,"answerCount":60}],"logo":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-a0e1e1c3ba46055fb3dd01fc5f3be22c_hd.jpg","urlToken":"bannianhuo"},"tokusatsu":{"startAt":1578376780,"name":"童年最爱的特摄片","title":"童年最爱的特摄片","color":"#5b95b3","banner":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-deef0f4dafe2aefc42db13e13eccb50e_hd.jpg","tinyBanner":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-deef0f4dafe2aefc42db13e13eccb50e_hd.jpg","endAt":1579612516,"url":"\u002Froundtables\u002Fexplore\u002Fcards\u002Froundtable\u002Ftokusatsu","followersCount":147,"intro":"你是否还记得童年看过的《奥特曼》、《假面骑士》和《恐龙战队》？本期圆桌知乎动画将联合机核网围绕日本特摄展开有趣的讨论，与各位一起探寻「童年最爱的特摄片」。","isFollowing":false,"guests":[{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-0d0f9c09d89eefab9472a5773abb54cc_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-8162a79dce764f25bb98f0cd9ea61290_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-31ceaecb844e9ec1d866467856073590_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-793000040915e367dc936a6055e60416_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-8c0e6ccf1998a84e319c01635a35c1cd_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-32b061a3e59ee493b934218a15634620_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-1573fd997138504dd36e8716c7cf7c90_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F50\u002Fv2-8cb4848e82d40979c606a5bb0ac75e1a_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002F50\u002Fv2-d73f64b1195efd2133b2449c17e35a44_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002F50\u002Fv2-f94e7dfbeece706091e32659e75680c5_hd.jpg"},{"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002F1b60b55da_hd.jpg"}],"questions":[{"followerCount":31,"title":"给你印象最恐怖的奥特曼是哪一集？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F364971242","type":"question","id":364971242,"answerCount":17},{"followerCount":25,"title":"如何理解特摄作品的「世界观」，该词与「世界」一词有何不同？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F55455515","type":"question","id":55455515,"answerCount":9},{"followerCount":67,"title":"有哪些冷门的特摄片？","url":"https:\u002F\u002Fwww.zhihu.com\u002Fquestion\u002F47981858","type":"question","id":47981858,"answerCount":23}],"logo":"https:\u002F\u002Fpic1.zhimg.com\u002F50\u002Fv2-3645e7ed5f39f47295bd57950e4ecf32_hd.jpg","urlToken":"tokusatsu"}},"order":["qingyunianyeqingmei","202001anime","bannianhuo","tokusatsu"]},"collections":{"36897826":{"favitems":[{"content":{"isCollapsed":false,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-1c35c89f632e078d5463bfc94a7426e5_{size}.jpg","badge":[],"name":"凭栏闻秋","headline":"“和光同尘，与时舒卷；戢鳞潜翼，思属风云。”","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-1c35c89f632e078d5463bfc94a7426e5_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002Fc902d10946716ef13b184b7eb4c48a1a","urlToken":"ping-lan-wen-qiu","id":"c902d10946716ef13b184b7eb4c48a1a"},"url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fanswers\u002F933038547","excerpt":"先拿这个玩意镇个楼，表示我是真干过BIM并应用于实践的。我2012年参加工作，2016年上半年开始接触BIM，虽然一直都是在施工单位工作，但是都是BIM的使用者，所以还是有些许资格来回答这个问题，那就假装被题主邀请过了吧[大笑]其次，我已经于2017年脱离BIM行…","id":933038547,"question":{"questionType":"normal","title":"为什么少有设计院能够实现真正的BIM设计，还是死守着CAD这样的二维生产工具？","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fquestions\u002F332920384","created":1562063408,"type":"question","id":332920384,"updatedTime":1574815904},"updatedTime":1578531445,"commentCount":34,"extras":"","answerType":"answer","createdTime":1576150502,"isCopyable":true,"type":"answer","thumbnail":"https:\u002F\u002Fpic2.zhimg.com\u002Fv2-8480243ed7a5180a2dadf1b7f77934d6_200x112.jpg","voteupCount":92}},{"content":{"updated":1578551381,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic2.zhimg.com\u002Fv2-053d1c81887d1f1bc0e31f27c896f819_{size}.jpg","badge":[{"type":"best_answerer","description":"优秀回答者"}],"name":"袁牧","headline":"建筑师","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002Fv2-053d1c81887d1f1bc0e31f27c896f819_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F7592b7fb2827678981312a0980dff598","urlToken":"yuanmu96","id":"7592b7fb2827678981312a0980dff598"},"url":"http:\u002F\u002Fzhuanlan.zhihu.com\u002Fp\u002F96041804","commentPermission":"all","title":"建筑师的灵魂三问\u002F\u002F建筑学的未来","excerpt":"在二十多年的建筑设计生涯里，我见过太多行业的阴暗面。同行的恶性低价竞争、政府部门的专横独断、甲方的贪婪欺诈、城市建筑的庸俗沉沦、从业者的绝望挣扎……以及行业自身的技术落后、价值混乱、自欺欺人、浮躁浮夸、不思进取……一地鸡毛。很多很多次，我…","created":1578551381,"commentCount":5,"imageUrl":"https:\u002F\u002Fpic4.zhimg.com\u002Fv2-71b64705bc036a0d480b2649337a2a91_r.jpg","excerptTitle":"","type":"article","id":96041804,"voteupCount":139}}],"title":"好吧，建筑。","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fcollections\u002F36897826","totalCount":939,"creator":{"avatarUrlTemplate":"https:\u002F\u002Fpic2.zhimg.com\u002Fv2-276888b11fc6dfd19c8a35e0e04bbf6c_{size}.jpg","badge":[],"name":"Billou","headline":"节日将至","gender":0,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic2.zhimg.com\u002Fv2-276888b11fc6dfd19c8a35e0e04bbf6c_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002Fa44b73c06f9dc83b45d0aeda93888763","urlToken":"billou","id":"a44b73c06f9dc83b45d0aeda93888763"},"isFollowing":false,"followerCount":8999,"isPublic":true,"type":"collection","id":36897826},"58222796":{"favitems":[{"content":{"isCollapsed":false,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-82e56c8f0e94973bb72b4d7c637a0a36_{size}.jpg","badge":[],"name":"王俊俊","headline":"存在主义心理治疗，法兰克福批判与沟通，想关注微信公号在资料里","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-82e56c8f0e94973bb72b4d7c637a0a36_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F9af8a73b750593df11a8bce16bc7c162","urlToken":"wang-jun-yi-73-97","id":"9af8a73b750593df11a8bce16bc7c162"},"url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fanswers\u002F955256584","excerpt":"作为所谓的十大匪城，我家楼下500米远的河堤，曾经是抢劫杀人犯的猎场。抢劫犯杀了那么多人，乃至于其中一个还是我妈的夫妻朋友，逃生的阿姨亲口讲抢劫杀人经过，怎么散步怎么遇到抢劫犯怎么被杀，她怎么逃到我家楼下。年幼的我在家还帮她插卡拉OK想让她开…","id":955256584,"question":{"questionType":"normal","title":"中国八、九十年代的治安有多差，逼得中央要严打？","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fquestions\u002F319920082","created":1555122474,"type":"question","id":319920082,"updatedTime":1555122474},"updatedTime":1577766564,"commentCount":95,"extras":"","answerType":"answer","createdTime":1577620498,"isCopyable":true,"type":"answer","thumbnail":"","voteupCount":993}},{"content":{"isCollapsed":false,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-82e56c8f0e94973bb72b4d7c637a0a36_{size}.jpg","badge":[],"name":"王俊俊","headline":"存在主义心理治疗，法兰克福批判与沟通，想关注微信公号在资料里","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-82e56c8f0e94973bb72b4d7c637a0a36_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F9af8a73b750593df11a8bce16bc7c162","urlToken":"wang-jun-yi-73-97","id":"9af8a73b750593df11a8bce16bc7c162"},"url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fanswers\u002F962086286","excerpt":"讨论找个问题很有趣。首先《奇葩说》的本质是什么？是披着辩论外衣的高级娱乐。和其他娱乐的本质是一样的，只是\u003Cb\u003E营养配比\u003C\u002Fb\u003E不一样。要吸引人，自然要一些噱头。连咪蒙这种公认毒药，都有一个文学硕士的噱头和一篇独唱团的文章被反反复复的提及。可见噱头有多大…","id":962086286,"question":{"questionType":"normal","title":"《奇葩说》有带来什么不好的影响吗？","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fquestions\u002F361889198","created":1576756205,"type":"question","id":361889198,"updatedTime":1578076040},"updatedTime":1578482712,"commentCount":119,"extras":"","answerType":"answer","createdTime":1578114518,"isCopyable":false,"type":"answer","thumbnail":"https:\u002F\u002Fpic1.zhimg.com\u002Fv2-313c6f8cea21fc69e13b6eefccd3076c_200x112.jpg","voteupCount":975}}],"title":"这才是我要的理智答案","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fcollections\u002F58222796","totalCount":692,"creator":{"avatarUrlTemplate":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-82e56c8f0e94973bb72b4d7c637a0a36_{size}.jpg","badge":[],"name":"王俊俊","headline":"存在主义心理治疗，法兰克福批判与沟通，想关注微信公号在资料里","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-82e56c8f0e94973bb72b4d7c637a0a36_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F9af8a73b750593df11a8bce16bc7c162","urlToken":"wang-jun-yi-73-97","id":"9af8a73b750593df11a8bce16bc7c162"},"isFollowing":false,"followerCount":13970,"isPublic":true,"type":"collection","id":58222796},"120052086":{"favitems":[{"content":{"updated":1578231003,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic1.zhimg.com\u002Fv2-7215d0e6018a0ed37f0aa2edfb071310_{size}.jpg","badge":[],"name":"SME情报员","headline":"讲讲科学史，聊聊科学家，挖挖冷知识（公众号：SME科技故事）","gender":0,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002Fv2-7215d0e6018a0ed37f0aa2edfb071310_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F8863c68227f29668a2b7617c49d4beeb","urlToken":"sme-98","id":"8863c68227f29668a2b7617c49d4beeb"},"url":"http:\u002F\u002Fzhuanlan.zhihu.com\u002Fp\u002F101161185","commentPermission":"all","title":"没有显微镜还想观察细胞？这些超乎想象的“巨无霸”单细胞生物绝对能满足你","excerpt":" 细胞总是和显微镜联系在一起，即使是大象，它的体细胞与老鼠的体细胞在大小上并没有明显的差异。可是我们看到单细胞生物不需要复杂的组织器官也能够很好地生存，那么是否存在“单细胞大象”呢？\u003Cb\u003E生物课本曾告诉我们，细胞通过细胞膜与外界进行物质交换，其…\u003C\u002Fb\u003E","created":1578229253,"commentCount":39,"imageUrl":"https:\u002F\u002Fpic2.zhimg.com\u002Fv2-99d95a3efc70e8414ab79175906be4d8_r.jpg","excerptTitle":"","type":"article","id":101161185,"voteupCount":669}},{"content":{"isCollapsed":false,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic1.zhimg.com\u002Fv2-700f2638020bc1897442f1d276defc69_{size}.jpg","badge":[{"type":"identity","description":"郑州大学 外科学硕士"}],"name":"甲状腺医生爱德华","headline":"前甲状腺外科医生\u002F医学硕士\u002F可咨询\u002F公众号：爱德华健康知识库","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002Fv2-700f2638020bc1897442f1d276defc69_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F2074d63ae116c6e4a1c0b2c4d6b2fbf9","urlToken":"ai-er-lin-ke-ai-de-hua","id":"2074d63ae116c6e4a1c0b2c4d6b2fbf9"},"url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fanswers\u002F968917728","excerpt":"不请自来，前甲状腺外科医生。甲状腺结节患病率的上升，取决于两个因素：1.统计学假象，2.实际患病人数增多。先说说假象，在十年前，彩超技术不发达，直径1公分以下的甲状腺结节，在彩超上都较难看清，直径5毫米以下的更是根本就看不见。而现在彩超技术大大…","id":968917728,"question":{"questionType":"normal","title":"为什么甲状腺结节患锅的这么多啊？","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fquestions\u002F363591330","created":1577592469,"type":"question","id":363591330,"updatedTime":1577592469},"updatedTime":1578616579,"commentCount":0,"extras":"","answerType":"answer","createdTime":1578616579,"isCopyable":true,"type":"answer","thumbnail":"","voteupCount":1}}],"title":"002-原来如此","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fcollections\u002F120052086","totalCount":1043,"creator":{"avatarUrlTemplate":"https:\u002F\u002Fpic1.zhimg.com\u002F68b861ce481c35304af23afccae28a7c_{size}.jpg","badge":[{"type":"identity","description":"中山大学 应用数学硕士在读"}],"name":"荆哲","headline":"ISFP\u002F九型6号\u002F数学\u002F解谜\u002FMinecraft","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic1.zhimg.com\u002F68b861ce481c35304af23afccae28a7c_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F9892c8d596269771dc8ce683b1a0cba4","urlToken":"jing-zhe-511","id":"9892c8d596269771dc8ce683b1a0cba4"},"isFollowing":false,"followerCount":157,"isPublic":true,"type":"collection","id":120052086},"145417966":{"favitems":[{"content":{"isCollapsed":false,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic4.zhimg.com\u002Faadd7b895_{size}.jpg","badge":[],"name":"匿名用户","headline":"","userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic4.zhimg.com\u002Faadd7b895_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F0","urlToken":"","id":"0"},"url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fanswers\u002F587062747","excerpt":"看到热搜标题的时候，我还以为咪蒙道歉是因为把瞎编的事件标榜成“非虚构”，没想到是因为她13年发布的不爱国言论。 没错，13年。 作为一个直男，我是很看不上咪蒙的。最早在《独唱团》看到咪蒙的文章，我以为她是文艺青年，没想到她后来会成为《致贱人》等…","id":587062747,"question":{"questionType":"normal","title":"如何看待咪蒙发道歉信：公号停更2个月 微博永久关停？","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fquestions\u002F310901315","created":1548986974,"type":"question","id":310901315,"updatedTime":1549087579},"updatedTime":1548991809,"commentCount":5,"extras":"","answerType":"answer","createdTime":1548991743,"isCopyable":true,"type":"answer","thumbnail":"","voteupCount":5}},{"content":{"isCollapsed":false,"author":{"avatarUrlTemplate":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-71203bdd03801f0cdd62a5119af5402b_{size}.jpg","badge":[],"name":"谧霖CalmRain","headline":"心理学 | 传播学 | 健身 | 禁欲系老鲜肉","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-71203bdd03801f0cdd62a5119af5402b_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002Fda810abc1460d1ea9fa10880c2275f12","urlToken":"pioneerain","id":"da810abc1460d1ea9fa10880c2275f12"},"url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fanswers\u002F657571930","excerpt":"现在是我国两性关系格局最混乱的时期。 一些媒体正在大批量地，\u003Cb\u003E将女性变为反智的施害者。\u003C\u002Fb\u003E比如今年的女性买房营销，很多营销号表示：女人要独立，因为男人靠不住。很明显，这是营销的话术，可惜的是，确实有人就不明白这个逻辑。独立需要原因么？如果需要，…","id":657571930,"question":{"questionType":"normal","title":"如何看待「丈夫忘买鸡腿被妻子捅死」一事？","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fquestions\u002F320758809","created":1555636962,"type":"question","id":320758809,"updatedTime":1555662846},"updatedTime":1562815846,"commentCount":42,"extras":"","answerType":"answer","createdTime":1555750390,"isCopyable":false,"type":"answer","thumbnail":"https:\u002F\u002Fpic4.zhimg.com\u002Fv2-5783b81a4477e0a6112ea3d40fc2e60a_200x112.jpg","voteupCount":156}}],"title":"行业研究","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fcollections\u002F145417966","totalCount":33215,"creator":{"avatarUrlTemplate":"https:\u002F\u002Fpic3.zhimg.com\u002F408d9c256_{size}.jpg","badge":[],"name":"樊雪刚","headline":"知识产权法","gender":1,"userType":"people","isAdvertiser":false,"avatarUrl":"https:\u002F\u002Fpic3.zhimg.com\u002F408d9c256_is.jpg","isOrg":false,"type":"people","url":"http:\u002F\u002Fwww.zhihu.com\u002Fapi\u002Fv4\u002Fpeople\u002F78a2df75acfee79bee47fdc5b1f417f6","urlToken":"fan-xue-gang","id":"78a2df75acfee79bee47fdc5b1f417f6"},"isFollowing":false,"followerCount":551,"isPublic":true,"type":"collection","id":145417966}},"columns":{"c_201557035":{"updated":1571143706,"description":"电竞GO比分情报网: www.esgo.com, 观赛2群：1025192518，水友2群：778737670（日常开黑内战聊游戏）","intro":"DOTA2赛事比分、数据资讯：esgo.com","urlToken":"c_201557035","id":"c_201557035","articlesCount":1702,"acceptSubmission":true,"title":"电竞GO","url":"https:\u002F\u002Fzhuanlan.zhihu.com\u002Fc_201557035","commentPermission":"all","created":1528791837,"imageUrl":"https:\u002F\u002Fpic1.zhimg.com\u002Fv2-ff5f252b658b6574c0284f8269c462d5_b.jpg","followers":18929,"type":"column"},"Creep-1212":{"updated":1562882751,"description":"又黑又吹，没有干货，菠菜输光，下海干活！","intro":"DOTA2 赛事回顾","urlToken":"Creep-1212","id":"Creep-1212","articlesCount":582,"acceptSubmission":false,"title":"DogeGamer","url":"https:\u002F\u002Fzhuanlan.zhihu.com\u002FCreep-1212","commentPermission":"all","created":1461743044,"imageUrl":"https:\u002F\u002Fpic4.zhimg.com\u002Fv2-b7024f6228f19b5d8051fc30ff3a548b_b.jpg","followers":4751,"type":"column"},"eespanol":{"updated":1575113182,"description":"这里有关于西班牙语的一切。WB\u002FWX：上外星星西语老板娘","intro":"此去经年，与西班牙语长相厮守","urlToken":"eespanol","id":"eespanol","articlesCount":125,"acceptSubmission":true,"title":"上外星星西语老板娘","url":"https:\u002F\u002Fzhuanlan.zhihu.com\u002Feespanol","commentPermission":"all","created":1503472077,"imageUrl":"https:\u002F\u002Fpic3.zhimg.com\u002Fv2-d45c0aa6694dcaa0b3b19aaa1d985f07_b.jpg","followers":1165,"type":"column"},"beasleynation":{"updated":1563709590,"description":"关于篮球、NBA、马刺，以及其他。","intro":"关于篮球、NBA、马刺，以及其他。","urlToken":"beasleynation","id":"beasleynation","articlesCount":310,"acceptSubmission":true,"title":"篮外空心","url":"https:\u002F\u002Fzhuanlan.zhihu.com\u002Fbeasleynation","commentPermission":"all","created":1442487120,"imageUrl":"https:\u002F\u002Fpic1.zhimg.com\u002Fcd516751a1e7678cf4118e6915ccecef_b.jpg","followers":9965,"type":"column"}}},"articles":{"voters":{}},"favlists":{"relations":{}},"pins":{"voters":{}},"topstory":{"recommend":{"isFetching":false,"isDrained":false,"afterId":0,"items":[],"next":null},"follow":{"isFetching":false,"isDrained":false,"afterId":0,"items":[],"next":null},"followWonderful":{"isFetching":false,"isDrained":false,"afterId":0,"items":[],"next":null},"sidebar":null,"announcement":{},"hotListCategories":[],"hotList":[],"guestFeeds":{"isFetching":false,"isDrained":false,"afterId":0,"items":[],"next":null},"followExtra":{"isNewUser":null,"isFetched":false,"followCount":0,"followers":[]}},"upload":{},"video":{"data":{},"shareVideoDetail":{},"last":{}},"zvideos":{"tagoreCategory":[],"recommendations":{}},"guide":{"guide":{"isFetching":false,"isShowGuide":false}},"reward":{"answer":{},"article":{},"question":{}},"search":{"recommendSearch":[],"topSearch":{},"searchValue":{},"suggestSearch":{},"attachedInfo":{},"nextOffset":{},"topicReview":{},"generalByQuery":{},"generalByQueryInADay":{},"generalByQueryInAWeek":{},"generalByQueryInThreeMonths":{},"peopleByQuery":{},"topicByQuery":{},"columnByQuery":{},"liveByQuery":{},"albumByQuery":{},"eBookByQuery":{}},"publicEditPermission":{},"readStatus":{},"draftHistory":{"history":{},"drafts":{}},"notifications":{"recent":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"history":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"notificationActors":{"isFetching":false,"isDrained":false,"isPrevDrained":false,"result":[],"next":null,"key":null},"recentNotificationEntry":"all"},"specials":{"entities":{},"all":{"data":[],"paging":{},"isLoading":false}},"collections":{"hot":{"data":[],"paging":{},"isLoading":false}},"mcn":{"bindInfo":{},"memberCategoryList":[],"producerList":[],"categoryList":[]},"brand":{"contentPlugin":{}},"metaLink":{"metaLinkTemplate":{}},"host":{"roundtable":{"subjects":{},"applications":{"total":0},"online":{"total":0},"applies":{},"details":{},"includedResource":{},"hotQuestions":{},"warmupContents":{},"batchInclude":{}},"special":{"applications":{"total":0,"pages":{},"entities":{}},"censorHistory":{},"drafts":{}}},"knowledgePlan":{"activityInfos":{},"activityStatuses":{},"premiumContents":{},"activityCreationList":{},"allCreationRankList":{}},"wallE":{"protectHistory":{"total":0,"pages":{},"entities":{}}},"roundtables":{"hotQuestions":{},"warmupContents":{},"hotDiscussions":{},"selectedContents":{},"roundtables":{}}},"subAppName":"main"}
+  </script>
+  <script src="https://static.zhihu.com/heifetz/vendor.7e94b6f1bbc8e94cdcd4.js">
+  </script>
+  <script src="https://static.zhihu.com/heifetz/main.app.218f85e57e5310de3375.js">
+  </script>
+  <script src="https://static.zhihu.com/heifetz/main.explore-routes.a275aa0f12f258c602f8.js">
+  </script>
+ </body>
+ <script async="" src="https://hm.baidu.com/hm.js?98beee57fd2ef70ccdd5ca52b9740c49">
+ </script>
+ <script async="" src="https://zz.bdstatic.com/linksubmit/push.js">
+ </script>
+</html>
